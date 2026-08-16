@@ -60,13 +60,65 @@ Relevant once you're sourcing your own CaCO3 feedstock in Stage 2 ([03_Unit_Econ
 * **Reading a DPR (Detailed Project Report):** learn the standard sections (promoter background, market analysis, technical feasibility, cost of project, means of finance, profitability projections, break-even analysis) so that when a consultant hands you one, you can independently sanity-check the assumptions rather than trusting the summary.
 * **Loan mechanics to understand cold, not just recognise:** the difference between a term loan and a working-capital loan, what a CGTMSE guarantee actually covers (it guarantees the *bank*, not you — you still owe the money), what "collateral-free" really means in practice, and how a co-applicant/guarantor's liability works (relevant given your father's role — [06_Core_Team_Experts.md](06_Core_Team_Experts.md) §8.0).
 
+## YouTube study playlist — checklist
+
+Real, verified videos only (no fabricated links) — mixed lengths from a few minutes to full tutorials, on purpose, per your instruction that watch-time doesn't matter as long as the content is useful. Check each box as you finish it. Organised by module so it lines up with everything above; within a module, roughly easiest/shortest first.
+
+### Module A — Printing
+
+* [X] [Exploring Printing Techniques: Offset, Digital, and Flexography Explained](https://www.youtube.com/watch?v=XLd-K2S8Vx4) — the three main processes side by side, good first watch
+* [X] [Flexography - Basic Introduction](https://www.youtube.com/watch?v=CcSsM772_l8) — anilox roll, doctor blade, KISS pressure, ink viscosity: the vocabulary you need before a flexo vendor call
+* [X] [How Offset Printing Works](https://www.youtube.com/watch?v=5LMU-zB8Sro) — plate → blanket → substrate, ink/water separation, why it needs a porous surface
+* [X] [UV Flexo Printing Technology](https://www.youtube.com/watch?v=0UyOId0TZwI) — the specific process combination (flexo + UV-curable ink) this plan is actually betting on for stone paper
+
+### Module B — Papermaking & stone paper
+
+* [X] [BBC Reports on Stone Paper](https://www.youtube.com/watch?v=LIJxoCRreM8) — short, journalistic overview of a Taiwan stone-paper producer, good orientation watch
+* [X] [How Stone Paper is Made | By A Good Company](https://www.youtube.com/watch?v=_ln2ZeSdfLw) — plain-language explainer of the CaCO3 + HDPE composite process
+* [X] [Stone Paper Manufacturing Technology](https://www.youtube.com/watch?v=dqhQ1jPlIAQ) — more technical framing of the same process
+* [X] [Synthetic paper production line (Stone paper machine)](https://www.youtube.com/watch?v=lRWdwR9cu28) — actual line footage, biaxially-oriented 3/5-layer co-extrusion — closest thing to seeing a real Stage 2 line run
+* [X] [How Paper Is Made - Paper Production Line | Paper Factory](https://www.youtube.com/watch?v=SSaRxKXFDAg) — conventional wood-pulp process, for contrast (pulping/pressing/drying vs. your compounding/extrusion process)
+
+### Module C — Extrusion & compounding
+
+* [X] [Twin Screw Extrusion - Basics](https://www.youtube.com/watch?v=sRQKGFlfVqE) — machine types, parts, working principle
+* [X] [Twin Screw Extrusion -- Parts and Operation](https://www.youtube.com/watch?v=bCqDfxiuSs8) — Paulson Training excerpt, more detail on the same
+* [ ] [CPM Twin Screw Compounding Basics](https://www.youtube.com/watch?v=9YT0Q04SZEk) — webinar covering screw geometry, process variables, scale-up — closest to what a vendor engineer actually talks about
+* [ ] [Blown Film Extrusion Process - How is Plastic Film or Sheet Made](https://www.youtube.com/watch?v=4PBUJ4F5cA4) — the sheet-forming side (die → bubble → cooling/calendering) that pairs with compounding
+* [ ] [The Mechanics of Blown Film Extrusion: An Animated Overview](https://www.youtube.com/watch?v=qFW5Y2C0T4s) — animated, easier to follow the physical mechanics from this one first
+
+### Module D — Converting machinery & automation
+
+* [ ] [PLC Basics for Beginners - Part 1](https://www.youtube.com/watch?v=c4VrA0kx5zc) — inputs/outputs, simple logic, start here
+* [ ] [PLC Basics: Ladder Logic](https://www.youtube.com/watch?v=1WQ70KJu6EY) — reading a ladder-logic diagram, the specific skill you need to not be baffled by an HMI screen
+* [ ] [Automatic Notebook Making Machine (How to Manufacture Copy/Notebook/Register)](https://www.youtube.com/watch?v=ML-jju4a3eo) — real running line, the exact category of Stage 1 equipment
+* [ ] [4-in-1 Fully Automatic Exercise Notebook Making Machine](https://www.youtube.com/watch?v=RVjkwEJCnq8) — stitching, folding, edge-squaring, cutting in one automated line — compare this footage against whatever a vendor shows you
+* [ ] [Automatic Notebook Making Machines | Exercise Book Manufacturing Plant | Labh Group](https://www.youtube.com/watch?v=l8Mgxyg1AZg) — a full manufacturing-plant walkthrough, not just one machine
+
+### Module E — Mineral processing
+
+* [ ] [Ground Calcium Carbonate 600-3000 Mesh Manufacturing Process](https://www.youtube.com/shorts/DJC8RtLuLsQ) — 60-second overview, good for orientation before the longer video below
+* [ ] [Working principle of calcium carbonate grinding mill / micronizer / pulverizer](https://www.youtube.com/watch?v=rWn1j-CSAsk) — how the mill itself works
+* [ ] [How To Make Ground Calcium Carbonate Powder - Ultrafine Grinding Mills Plant](https://www.youtube.com/watch?v=lKV6pC2rHp8) — full 7-step process from raw calcite/limestone/marble to fine GCC powder, directly relevant to §4.2.1's purification question
+
+### Module F — Compliance
+
+* [ ] [CTE &amp; CTO NOC from Rajasthan Pollution Control Board | Consent to Establish &amp; Operate Explained](https://www.youtube.com/watch?v=WpZF2pRwzb8) — Rajasthan-specific, the actual process you'll go through
+* [ ] [Udyam Registration 10 min: Step by step | How to apply for MSME](https://www.youtube.com/watch?v=QitBl90Jg0Q) — walk through the real portal once yourself
+
+### Module G — Business & financial literacy
+
+* [ ] [What is PMEGP Loan Scheme? How to Apply Online?](https://www.youtube.com/watch?v=xFgWUyfbGUI) — subsidy mechanics, if PMEGP ever becomes relevant post-gate
+* [ ] [CGTMSE Scheme Explained | Collateral-Free Loans for MSMEs | Eligibility, Benefits &amp; Process](https://www.youtube.com/watch?v=7S7xReNOxrQ) — eligibility and process
+* [ ] [CGTMSE Loan: Complete Guide (With Bank Calculation)](https://www.youtube.com/watch?v=xgjLJ05LVHg) — the actual guarantee-fee/loan-amount math, so "collateral-free" doesn't get mistaken for "risk-free" (§12.4)
+
 ## Suggested pacing against the implementation roadmap
 
-| When (per [08_Implementation_Roadmap.md](08_Implementation_Roadmap.md)) | Study priority |
-| :---- | :---- |
-| Phase A–B (Weeks 1–12) | Module A (printing) and Module G (business/financial) — you need these before your first equipment and vendor conversations |
-| Phase C–D (Weeks 8–20) | Module D (converting/automation) and Module F (compliance) — directly ahead of Stage 1 equipment purchase and licensing |
-| Stage 2 planning (once Stage 1 has a track record) | Module C (extrusion) and Module E (mineral processing) in real depth — this is where the highest-stakes, highest-fraud-risk capital gets spent |
+| When (per[08_Implementation_Roadmap.md](08_Implementation_Roadmap.md)) | Study priority                                                                                                                                  |
+| :-------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Phase A–B (Weeks 1–12)                                              | Module A (printing) and Module G (business/financial) — you need these before your first equipment and vendor conversations                    |
+| Phase C–D (Weeks 8–20)                                              | Module D (converting/automation) and Module F (compliance) — directly ahead of Stage 1 equipment purchase and licensing                        |
+| Stage 2 planning (once Stage 1 has a track record)                    | Module C (extrusion) and Module E (mineral processing) in real depth — this is where the highest-stakes, highest-fraud-risk capital gets spent |
 
 ## Next
 
@@ -74,4 +126,5 @@ Relevant once you're sourcing your own CaCO3 feedstock in Stage 2 ([03_Unit_Econ
 * Where these concepts show up in the actual plan → [03_Unit_Economics.md](03_Unit_Economics.md), [07_Capital_Plan.md](07_Capital_Plan.md)
 
 ---
+
 *Sources listed centrally in [10_Sources.md](10_Sources.md).*
