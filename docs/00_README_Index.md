@@ -20,6 +20,8 @@ This is the foundation set of documents for the limestone/marble-waste "stone pa
 | 10 | [Sources](10_Sources.md) | Every source cited across all docs above | "Where did a number come from?" |
 | 11 | [Learning Resources](11_Learning_Resources.md) | Study syllabus: printing, papermaking, extrusion, converting, mineral processing, compliance, business literacy | "Where do I actually go to learn this in depth?" |
 | 12 | [Vendor, Hiring & Capital Due Diligence](12_Vendor_Hiring_Due_Diligence.md) | Checklists to protect capital, hires, and contracts from being exploited | "How do I make sure no one takes advantage of us?" |
+| 13 | [Paper Industry Economics — Deep Dive](13_Paper_Industry_Economics_Deep_Dive.md) | India paper industry cost structure, major listed-company comparison, real stone-paper market pricing (not just input cost), regulatory/GST factors, ranked target-sector strategy | "What does it really cost to make a tonne of paper in India, how do the big players compare, and which sectors should we actually chase first?" |
+| 14 | [Founder Reality Check](14_Founder_Reality_Check.md) | Skeptical, non-cheerleading re-verification of the whole plan — what's genuinely solid, what's unproven, and the five things to resolve before spending any Stage 1 capital | "Is this actually a good, reliable plan, or am I just telling myself a good story?" |
 
 ## The one-line version
 
