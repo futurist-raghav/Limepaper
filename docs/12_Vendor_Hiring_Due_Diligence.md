@@ -4,7 +4,7 @@
 
 ## 12.1 Machinery vendor due diligence (Stage 1 and Stage 2 equipment)
 
-This applies to every equipment purchase — the ₹6–12 lakh Stage 1 converting machine and, at much higher stakes, the Stage 2 extrusion line ([07_Capital_Plan.md](07_Capital_Plan.md)).
+This applies to every equipment purchase — the ₹6–12 lakh converting/finishing line and, at much higher stakes, the ₹70–95 lakh extrusion line, **both of which are now Stage 1 purchases** ([07_Capital_Plan.md](07_Capital_Plan.md)).
 
 ### Before you ever send money
 
@@ -13,7 +13,7 @@ This applies to every equipment purchase — the ₹6–12 lakh Stage 1 converti
 * **Confirm the factory address is a real industrial premises**, not a residential flat or a shared virtual office, using satellite/street-view imagery and a direct call to a landline (not just a mobile/WhatsApp number).
 * **No physical, visitable address, or "we only communicate on WhatsApp"** is on its own a serious red flag — a genuine manufacturer has an address you can visit or have independently audited.
 
-### The site visit itself (never skip this for a Stage 2-scale purchase, and strongly prefer it for Stage 1)
+### The site visit itself (never skip this for the extrusion line; strongly prefer it for everything else)
 
 * **Count the machines against what you were quoted**, and notice whether equipment looks in regular productive use or staged for your visit.
 * **Ask when key equipment was purchased and ask to see maintenance records** — a machine that's supposedly always been reliable but has no maintenance log at all is worth questioning.
@@ -34,7 +34,7 @@ This applies to every equipment purchase — the ₹6–12 lakh Stage 1 converti
 ### Payment structure — never pay it all upfront
 
 * Standard, defensible structure: a deposit to confirm the order (commonly 20–30%), a further tranche on pre-shipment inspection or factory acceptance test (FAT), and a final tranche only on successful installation and commissioning at your site (SAT — site acceptance test). Negotiate toward this; a vendor who refuses any staging at all, especially for a first-time buyer, is a red flag in itself.
-* **For any Stage 2-scale purchase (lakhs to crores), get an independent third-party inspection** before final payment — agencies like SGS, Bureau Veritas, Intertek, or AsiaInspection do this professionally, typically for a few hundred to low-thousands of dollars — genuinely cheap insurance relative to the amount at risk.
+* **For any purchase at lakhs-to-crores scale — which the extrusion line now is, in year one — get an independent third-party inspection** before final payment — agencies like SGS, Bureau Veritas, Intertek, or AsiaInspection do this professionally, typically for a few hundred to low-thousands of dollars — genuinely cheap insurance relative to the amount at risk.
 * Put warranty, AMC (annual maintenance contract) terms, spares availability, and training commitments **in the written contract**, not as verbal promises made during the sales pitch.
 
 ## 12.2 Feedstock supplier due diligence
@@ -66,7 +66,7 @@ Applies to every technical hire — process engineer, converting-line technician
 
 * **Keep a shared running log** (even a simple spreadsheet) of every vendor/supplier/hire due-diligence check performed, who did it, and what was found — across three people, an informal "someone probably checked that" is exactly how gaps happen.
 * **Slow down specifically when someone is pushing urgency** ("this price is only good today," "sign now or lose the slot") — urgency pressure is one of the most consistent tells across vendor and hiring fraud generally, independent of industry.
-* **Revisit this checklist before every new category of spend** — Stage 1 equipment, feedstock contracts, Stage 2 machinery, your first real hires, and again before any Stage 2 loan documents are signed.
+* **Revisit this checklist before every new category of spend** — the extrusion and converting lines, feedstock contracts, Stage 2 machinery, your first real hires, and again before any Stage 2 loan documents are signed.
 
 ## Next
 

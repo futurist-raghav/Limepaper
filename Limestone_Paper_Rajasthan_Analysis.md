@@ -12,7 +12,7 @@ The single-file version of this business plan has been split into separate, cros
 | [04_Competitive_Landscape.md](docs/04_Competitive_Landscape.md) | Competitors, Ston2pack status check |
 | [05_Risks_Diligence.md](docs/05_Risks_Diligence.md) | Risks & open questions |
 | [06_Core_Team_Experts.md](docs/06_Core_Team_Experts.md) | Who to hire, in what order |
-| [07_Capital_Plan.md](docs/07_Capital_Plan.md) | Financing plan, capped at ₹1.5 crore total |
+| [07_Capital_Plan.md](docs/07_Capital_Plan.md) | Bootstrapped ₹1.5 crore plant (Stage 1), then a ₹15 crore raise for 10% (Stage 2) |
 | [08_Implementation_Roadmap.md](docs/08_Implementation_Roadmap.md) | Step-by-step TODO for the 3-person team |
 | [09_B2B_Client_Acquisition.md](docs/09_B2B_Client_Acquisition.md) | How to land real B2B clients |
 | [10_Sources.md](docs/10_Sources.md) | All citations |

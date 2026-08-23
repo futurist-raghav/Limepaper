@@ -16,9 +16,9 @@
 
 * **Unit economics headline:** Illustrative materials-and-energy cost ≈ ₹24,000–32,000 per tonne of finished stone paper vs. ≈ ₹42,000–73,000+ per tonne for wood-pulp paper at current wood prices — full comparison and caveats in [03_Unit_Economics.md](03_Unit_Economics.md) §4.6.
 
-* **Capital reality:** Total capital deployed through loans and finance over the next 36 months is capped at **₹1.5 crore — a hard ceiling, not a target.** The plan: an automated *converting* factory (₹10–15 lakh, buys finished stone paper and turns it into sellable notebooks/packaging) that starts producing and selling immediately, self-funded from its own profit; only after 12–24 months of real numbers does it backward-integrate into its own extrusion line, financed within the remainder of that ₹1.5 crore ceiling. No further capital is raised beyond that until at least 50% of that loan is repaid from operations. Full detail in [07_Capital_Plan.md](07_Capital_Plan.md).
+* **Capital reality:** Stage 1 is a **bootstrapped ₹1.5 crore extrusion + converting plant** — no external equity, funded by family capital, the silver asset and collateral-backed term debt, with ₹1.5 crore a hard ceiling on borrowing, not a target. It extrudes its own stone paper and converts it into finished product on the same site from day one. Stage 2 is the scale step: a 5 TPD plant at the ≈₹17.2 crore benchmark India's own published project report puts on it. No new *borrowing* beyond Stage 1 until at least 50% of that principal is repaid from operations. Full detail in [07_Capital_Plan.md](07_Capital_Plan.md).
 
-* **The ask** *(fill in once Phase 0 traction exists — 07_Capital_Plan.md §9.2)*: ₹___ for [pilot extrusion line / working capital / converting equipment], in exchange for [equity / debt terms].
+* **The ask:** **₹15 crore for 10% equity** (implied post-money ₹150 crore), to fund the Stage 2 5 TPD plant, in-house micronizing, an owned site and three months' working capital — uses of funds in [07_Capital_Plan.md](07_Capital_Plan.md) §9.3.1, and what has to be true before the raise is credible in §9.3.2.
 
 ---
 

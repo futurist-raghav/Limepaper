@@ -22,7 +22,7 @@
 
 * **Exhibit at or attend India's packaging/print trade shows** (e.g. PackPlus, PrintPack India) — where converters and FMCG packaging buyers actually source new substrates. Budget for at least one show once you have sellable samples.
 
-* **Pre-sell before you scale.** Map 3–5 target anchor B2B customers and get LOIs before committing Phase 1 capex ([07_Capital_Plan.md](07_Capital_Plan.md) §9.3) — both a sales and a fundraising tactic, since lenders want to see offtake.
+* **Pre-sell before you commission.** Map 3–5 target anchor B2B customers and get signed LOIs **before the Stage 1 equipment order is placed** ([07_Capital_Plan.md](07_Capital_Plan.md) §9.2.4, [08_Implementation_Roadmap.md](08_Implementation_Roadmap.md) step 17). Since the converting-only first stage was removed, ₹1.5 crore of capex now lands ahead of revenue — these LOIs are the gate on that spend, not just a sales tactic.
 
 * **Use the sustainability/ESG hook directly with brand procurement teams**, not just converters — many FMCG companies now run packaging-sustainability scorecards that a "tree-free, water-free, made from diverted marble waste" story can score well against. Ask early B2B contacts whether they have an ESG/packaging-sustainability lead you can talk to.
 
@@ -32,8 +32,8 @@
 
 This playbook runs continuously starting Week 6 of [08_Implementation_Roadmap.md](08_Implementation_Roadmap.md) (Phase E) — it isn't a later-stage activity. Your first 2–3 signed LOIs double as:
 
-1. Revenue validation for Phase 0.
-2. Fundraising collateral for the Phase 1 raise ([07_Capital_Plan.md](07_Capital_Plan.md) §9.3) — lenders and investors want to see offtake before they'll write a cheque.
+1. The gate on Stage 1 capex — no signed offtake, no equipment order ([07_Capital_Plan.md](07_Capital_Plan.md) §9.2.4).
+2. Collateral for the Stage 1 term loan, and later for the ₹15 crore Stage 2 round (§9.3.2) — lenders and investors both want to see offtake before they write a cheque. For Stage 2 the bar is higher: repeat purchase history, not LOIs.
 
 ## Next
 

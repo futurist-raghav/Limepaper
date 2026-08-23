@@ -6,7 +6,7 @@
 
 Study in the order below — each module builds vocabulary the next one assumes. You don't need to become an engineer in any of these; you need enough depth that when a vendor says "our extruder runs a 32:1 L/D ratio screw" or a printer says "this needs UV-flexo, not offset," you know whether that's a normal statement or a red flag. Realistically: Module A and C matter most before Stage 1 equipment purchases ([07_Capital_Plan.md](07_Capital_Plan.md) §9.2); Module C, E and F matter most before Stage 2 ([07_Capital_Plan.md](07_Capital_Plan.md) §9.3).
 
-## Module A — Printing Fundamentals (study before Stage 1 equipment purchase)
+## Module A — Printing Fundamentals (study before any equipment purchase)
 
 **Why this matters immediately:** stone paper is not chemically or physically the same as wood-pulp paper, and it does not print the same way — get this wrong and your first batch of notebooks or packaging comes out with ink that smudges, doesn't cure, or won't adhere.
 
@@ -23,9 +23,9 @@ Study in the order below — each module builds vocabulary the next one assumes.
 * **Patents worth skimming** (you don't need to understand every claim — read the background/summary sections for how the industry itself describes the process): CN102673061A ("Double-layer food-grade stone paper and manufacturing method thereof"), US5364610 (precipitated calcium carbonate production), US6540878 (stabilized filler production) — Google Patents.
 * **Conventional papermaking, for comparison/vocabulary:** TAPPI (Technical Association of the Pulp and Paper Industry) publishes widely-used terminology and process references for conventional wood-pulp papermaking — useful even though it's a different process, because it's the standard your B2B customers and any hired paper-industry veteran will already speak.
 
-## Module C — Polymer Extrusion & Compounding (study seriously before Stage 2)
+## Module C — Polymer Extrusion & Compounding (study seriously before Stage 1 — this is now year-one knowledge)
 
-This is the highest-value module for protecting yourself in Stage 2 ([07_Capital_Plan.md](07_Capital_Plan.md) §9.3) — extrusion-line vendor claims are where a technically illiterate buyer is most exposed.
+This is the highest-value module in the whole syllabus now that extrusion sits in Stage 1 ([07_Capital_Plan.md](07_Capital_Plan.md) §9.2) — extrusion-line vendor claims are where a technically illiterate buyer is most exposed, and the line is the single largest cheque you will write.
 
 * **Free, structured, real course:** NPTEL/Swayam "**Processing of Polymers and Polymer Composites**" (IIT Roorkee, Dr. Inderdeep Singh) — 8 weeks, covers extrusion, injection moulding, thermoforming, compression/transfer moulding, and the underlying materials science of thermoplastics. All content free; a paid proctored exam gets you a certificate if you want one. This is a genuine engineering-school course, not a vendor-produced explainer — start here.
 * **Reference books** (buy the one that matches your patience level — all three are well-regarded):
@@ -36,7 +36,7 @@ This is the highest-value module for protecting yourself in Stage 2 ([07_Capital
 
 ## Module D — Converting Machinery & Automation
 
-Directly relevant to your Stage 1 automated notebook/converting line ([07_Capital_Plan.md](07_Capital_Plan.md) §9.2.1) and the automation-first hiring philosophy ([06_Core_Team_Experts.md](06_Core_Team_Experts.md) §8.3).
+Directly relevant to the automated converting/finishing line that sits downstream of your extruder ([07_Capital_Plan.md](07_Capital_Plan.md) §9.2.1) and the automation-first hiring philosophy ([06_Core_Team_Experts.md](06_Core_Team_Experts.md) §8.3).
 
 * **What to learn:** PLC (Programmable Logic Controller) basics — what a PLC actually controls, how to read a basic ladder-logic or HMI (human-machine interface) screen, what "servo-driven" vs. "pneumatic" actually means for precision and maintenance cost. You don't need to program a PLC; you need to not be baffled when a vendor uses the term to justify a price.
 * **How to study it cheaply:** most PLC/industrial-automation basics courses on Coursera/Udemy (search "PLC basics for beginners") are inexpensive and short (a few hours) — sufficient depth for a buyer, not an operator. Treat this as a weekend, not a semester.
@@ -44,7 +44,7 @@ Directly relevant to your Stage 1 automated notebook/converting line ([07_Capita
 
 ## Module E — Mineral Processing / Beneficiation
 
-Relevant once you're sourcing your own CaCO3 feedstock in Stage 2 ([03_Unit_Economics.md](03_Unit_Economics.md) §4.2.1).
+Relevant from Stage 1, since you now buy and qualify your own micronized CaCO3 rather than finished sheet ([03_Unit_Economics.md](03_Unit_Economics.md) §4.2.1) — and critical before Stage 2 brings micronizing in-house ([07_Capital_Plan.md](07_Capital_Plan.md) §9.3.1).
 
 * **Concepts to learn:** micronization (grinding to a target particle size, measured in mesh or microns), whiteness index (how it's measured and why it matters for print quality), iron content and its effect on discolouration, and the difference between wet and dry grinding processes.
 * **Practical study method:** this is a case where a site visit to an actual local Kishangarh/Rajsamand micronizing unit, with your mineral-processing QC consultant ([06_Core_Team_Experts.md](06_Core_Team_Experts.md) role #6), will teach you more in an afternoon than any course — prioritise that visit alongside any reading.
@@ -117,8 +117,8 @@ Real, verified videos only (no fabricated links) — mixed lengths from a few mi
 | When (per[08_Implementation_Roadmap.md](08_Implementation_Roadmap.md)) | Study priority                                                                                                                                  |
 | :-------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Phase A–B (Weeks 1–12)                                              | Module A (printing) and Module G (business/financial) — you need these before your first equipment and vendor conversations                    |
-| Phase C–D (Weeks 8–20)                                              | Module D (converting/automation) and Module F (compliance) — directly ahead of Stage 1 equipment purchase and licensing                        |
-| Stage 2 planning (once Stage 1 has a track record)                    | Module C (extrusion) and Module E (mineral processing) in real depth — this is where the highest-stakes, highest-fraud-risk capital gets spent |
+| Phase B–C (Weeks 4–20)                                              | **Module C (extrusion) and Module E (mineral processing) in real depth** — extrusion is now a Stage 1 purchase, so this is where the highest-stakes, highest-fraud-risk capital gets spent |
+| Phase C–D (Weeks 8–32)                                              | Module D (converting/automation) and Module F (compliance) — directly ahead of equipment purchase, commissioning and consent                   |
 
 ## Next
 
