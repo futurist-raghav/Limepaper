@@ -9,7 +9,8 @@
 <meta property="og:title" content="Limepaper — Paper made from stone">
 <meta property="og:description" content="Tree-free, water-free stone paper, made from the marble waste Rajasthan currently pays to bury.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23060605'/><circle cx='16' cy='16' r='7' fill='%23C6E24A'/></svg>">
+<link rel="icon" href="./logo-icon.png">
+<link rel="apple-touch-icon" href="./logo.png">
 <style>
 :root{
   --bg:#060605;
@@ -47,7 +48,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:15;display:flex;align-items:cent
   background:rgba(6,6,5,.55);border-bottom:1px solid transparent;transition:border-color .4s ease,background .4s ease}
 nav.stuck{border-bottom-color:var(--line)}
 .brand{display:flex;align-items:center;gap:9px;font-weight:600;letter-spacing:-.02em;font-size:15px}
-.dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px rgba(198,226,74,.65)}
+.mark{width:24px;height:24px;object-fit:contain;flex:none;
+  /* the mark is drawn for light ground — its charcoal keyline all but vanishes on this
+     background, so it gets a faint lime cast to sit in the palette */
+  filter:drop-shadow(0 0 10px rgba(198,226,74,.28))}
 .chip{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);
   border:1px solid var(--line);border-radius:100px;padding:4px 10px}
 nav .links{margin-left:auto;display:flex;gap:26px;font-size:13.5px;color:var(--ink-2)}
@@ -179,7 +183,7 @@ footer a{color:var(--ink-2)}
 <div id="progress" aria-hidden="true"></div>
 
 <nav id="nav">
-  <span class="brand"><span class="dot"></span>Limepaper</span>
+  <span class="brand"><img class="mark" src="./logo.png" alt="" width="512" height="416">Limepaper</span>
   <span class="chip">Investor Brief</span>
   <span class="links">
     <a href="#material">Material</a>

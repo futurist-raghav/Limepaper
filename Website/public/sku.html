@@ -9,7 +9,8 @@
 <meta property="og:title" content="Limepaper — What we make">
 <meta property="og:description" content="Sixteen possible products. These are the nine worth building, and why.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23060605'/><circle cx='16' cy='16' r='7' fill='%23C6E24A'/></svg>">
+<link rel="icon" href="./logo-icon.png">
+<link rel="apple-touch-icon" href="./logo.png">
 <style>
 :root{
   --bg:#060605;
@@ -49,7 +50,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:15;display:flex;align-items:cent
 nav.stuck{border-bottom-color:var(--line)}
 .brand{display:flex;align-items:center;gap:9px;font-weight:600;letter-spacing:-.02em;font-size:15px;
   color:inherit;text-decoration:none}
-.dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px rgba(198,226,74,.65)}
+.mark{width:24px;height:24px;object-fit:contain;flex:none;
+  filter:drop-shadow(0 0 10px rgba(198,226,74,.28))}
 .chip{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);
   border:1px solid var(--line);border-radius:100px;padding:4px 10px}
 nav .links{margin-left:auto;display:flex;gap:26px;font-size:13.5px;color:var(--ink-2)}
@@ -228,7 +230,7 @@ footer a{color:var(--ink-2)}
 <div id="progress" aria-hidden="true"></div>
 
 <nav id="nav">
-  <a class="brand" href="./index.html"><span class="dot"></span>Limepaper</a>
+  <a class="brand" href="./index.html"><img class="mark" src="./logo.png" alt="" width="512" height="416">Limepaper</a>
   <span class="chip">Product line</span>
   <span class="links">
     <a href="./index.html#material">Material</a>
