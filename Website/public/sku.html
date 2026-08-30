@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Limepaper — What we make</title>
-<meta name="description" content="The stone paper product line: labels, tags, cartons, notebooks and wallpaper — filtered to what is fast to make, mass-market, and genuinely better than the incumbent.">
+<meta name="description" content="The stone paper product line: labels, tags, cartons, notebooks, wallpaper and premium retail packaging — filtered to what is fast to make, mass-market, and genuinely better than the incumbent.">
 <meta name="theme-color" content="#060605">
 <meta property="og:title" content="Limepaper — What we make">
-<meta property="og:description" content="Sixteen possible products. These are the nine worth building, and why.">
+<meta property="og:description" content="Seventeen possible products. These are the ten worth building, and why.">
 <meta property="og:type" content="website">
 <link rel="icon" href="./logo-icon.png">
 <link rel="apple-touch-icon" href="./logo.png">
@@ -142,6 +142,13 @@ p.body{font-size:clamp(1rem,1.35vw,1.08rem);color:var(--ink-2);max-width:62ch;li
 .pr .v{font-size:15px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .pr .v.win{color:var(--accent)}
 .pr .was{font-size:12.5px;color:var(--ink-3);text-decoration:line-through;font-variant-numeric:tabular-nums}
+/* the quoted price, sat under the cost-vs-cost row rather than replacing it — the like-for-like
+   comparison is the argument, this is the revenue line that sits on top of it */
+.sell{margin-top:8px;padding:10px 15px;border-radius:12px;border:1px solid rgba(198,226,74,.22);
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.sell .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.sell .sv{font-size:15px;font-weight:600;letter-spacing:-.02em;color:var(--ink);
+  font-variant-numeric:tabular-nums}
 
 /* ---------- versus bars ---------- */
 .cmp{margin-top:48px;display:flex;flex-direction:column;gap:30px}
@@ -245,11 +252,11 @@ footer a{color:var(--ink-2)}
 
 <section class="hero">
   <div class="rv"><p class="eyebrow">The product line</p></div>
-  <h1 class="rv" data-d="1"><span>Sixteen products.</span><span class="b">Nine worth making.</span></h1>
+  <h1 class="rv" data-d="1"><span>Seventeen products.</span><span class="b">Ten worth making.</span></h1>
   <p class="lead rv" data-d="2">The same sheet becomes a label, a carton, a notebook or a wall covering. Most of
     those are bad businesses. This page is only the ones that survive the filter — and what makes each one survive it.</p>
   <div class="count rv" data-d="3">
-    <div><div class="n">9</div><div class="l">Products that clear every gate below</div></div>
+    <div><div class="n">10</div><div class="l">Products that clear every gate below</div></div>
     <div><div class="n" style="color:var(--accent)">2×</div><div class="l">Substrate cost advantage where we win, at production cost</div></div>
     <div><div class="n" style="color:var(--cyan)">1</div><div class="l">Category with no Indian stone-paper incumbent at all</div></div>
     <div class="mut"><div class="n">7</div><div class="l">Deliberately not built — listed at the bottom</div></div>
@@ -280,7 +287,7 @@ footer a{color:var(--ink-2)}
 <section id="ship">
   <div class="rv"><p class="eyebrow">Tier one · build first</p>
     <h2>Cheaper than the incumbent, and better at the job.</h2>
-    <p class="body">These six clear four or five gates each. All of them run on the Stage&nbsp;1 line with no
+    <p class="body">These seven clear four or five gates each. All of them run on the Stage&nbsp;1 line with no
       additional equipment, and in every case the property the buyer is already paying extra for — waterproof,
       tear-proof, wipe-clean — is something stone paper has natively and the incumbent has to add with a
       coating or a lamination step.</p></div>
@@ -298,6 +305,7 @@ footer a{color:var(--ink-2)}
           with the same waterproof and tear-proof behaviour, at half the substrate cost.</p>
         <div class="pr"><span><span class="k">Substrate / unit</span><br><span class="v win">₹0.03</span></span>
           <span style="text-align:right"><span class="k">Paper face stock</span><br><span class="was">₹0.06</span></span></div>
+          <div class="sell"><span class="k">Our price</span><span class="sv">₹0.05</span></div>
         <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
           <span class="tag first">First mover</span><span class="tag cheap">Cheaper + better</span></div>
       </div>
@@ -314,6 +322,7 @@ footer a{color:var(--ink-2)}
           brands with ESG packaging mandates.</p>
         <div class="pr"><span><span class="k">Substrate / unit</span><br><span class="v win">₹0.02</span></span>
           <span style="text-align:right"><span class="k">Kraft card tag</span><br><span class="was">₹0.05</span></span></div>
+          <div class="sell"><span class="k">Our price</span><span class="sv">₹0.03</span></div>
         <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
           <span class="tag cheap">Cheaper + better</span><span class="tag bio">PBAT-ready</span></div>
       </div>
@@ -330,6 +339,7 @@ footer a{color:var(--ink-2)}
           We have it without the coating step — and Rajasthan/Gujarat is the pharma corridor.</p>
         <div class="pr"><span><span class="k">Substrate / blank</span><br><span class="v win">₹0.55</span></span>
           <span style="text-align:right"><span class="k">Duplex board</span><br><span class="was">₹1.12</span></span></div>
+          <div class="sell"><span class="k">Our price</span><span class="sv">₹0.94</span></div>
         <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
           <span class="tag cheap">Cheaper + better</span></div>
       </div>
@@ -346,6 +356,7 @@ footer a{color:var(--ink-2)}
           substrate cost before the lamination is even priced in.</p>
         <div class="pr"><span><span class="k">Substrate / unit</span><br><span class="v win">₹0.39</span></span>
           <span style="text-align:right"><span class="k">Paper + lamination</span><br><span class="was">₹0.81+</span></span></div>
+          <div class="sell"><span class="k">Our price</span><span class="sv">₹0.66</span></div>
         <div class="tags"><span class="tag fast">Fast</span><span class="tag cheap">Cheaper + better</span>
           <span class="tag first">First mover</span></div>
       </div>
@@ -378,8 +389,26 @@ footer a{color:var(--ink-2)}
           against a much larger volume base.</p>
         <div class="pr"><span><span class="k">Substrate / blank</span><br><span class="v win">₹0.50</span></span>
           <span style="text-align:right"><span class="k">FBB / SBS board</span><br><span class="was">₹1.04</span></span></div>
+          <div class="sell"><span class="k">Our price</span><span class="sv">₹0.85</span></div>
         <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
           <span class="tag cheap">Cheaper + better</span></div>
+      </div>
+    </div>
+
+    <div class="prod rv" data-d="3">
+      <div class="shot"><span class="rank">Trials pending</span>
+        <img src="./sku/bag-carry-premium.jpg" alt="Plain premium retail carry bag with rope handles" loading="lazy" width="720" height="720"></div>
+      <div class="meat">
+        <h3>Premium carry bags</h3>
+        <div class="sub">Retail standard · 320×250×120mm</div>
+        <p class="why">The real incumbent is not paper, it is <b>paper plus a BOPP lamination</b> — two materials,
+          an extra process step, and a composite nothing in India separates. We are one material with the same
+          wipe-clean hand, and handle tear-out is the failure mode of every premium bag.</p>
+        <div class="pr"><span><span class="k">Substrate / bag</span><br><span class="v win">₹4.23</span></span>
+          <span style="text-align:right"><span class="k">Art paper + lamination</span><br><span class="was">₹5.33</span></span></div>
+        <div class="sell"><span class="k">Our price</span><span class="sv">₹6.23</span></div>
+        <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
+          <span class="tag cheap">Cheaper + better</span><span class="tag bio">PBAT-ready</span></div>
       </div>
     </div>
 
@@ -404,8 +433,9 @@ footer a{color:var(--ink-2)}
         <p class="why">Indian wallpaper fails in exactly one predictable way: <b>mould and peeling in humid rooms</b>
           — bathrooms, kitchens, monsoon walls. We are natively waterproof. And peel-and-stick sidesteps the one
           real technical problem, since our dense sheet won't take wet paste.</p>
-        <div class="pr"><span><span class="k">Substrate</span><br><span class="v win">≈₹126/m²</span></span>
+        <div class="pr"><span><span class="k">Substrate</span><br><span class="v win">≈₹8.40/m²</span></span>
           <span style="text-align:right"><span class="k">Retail category sells at</span><br><span class="v">₹570–1,320/m²</span></span></div>
+          <div class="sell"><span class="k">Our price</span><span class="sv">₹10.40/m²</span></div>
         <div class="tags"><span class="tag first">First mover</span><span class="tag mass">Mass market</span>
           <span class="tag cheap">Cheaper + better</span></div>
       </div>
@@ -422,6 +452,7 @@ footer a{color:var(--ink-2)}
           plastic-alternative angle is real here rather than cosmetic.</p>
         <div class="pr"><span><span class="k">Substrate / panel</span><br><span class="v win">≈₹10.58</span></span>
           <span style="text-align:right"><span class="k">Correx / vinyl</span><br><span class="was" style="text-decoration:none">Quote pending</span></span></div>
+          <div class="sell"><span class="k">Our price</span><span class="sv">₹12.58</span></div>
         <div class="tags"><span class="tag first">First mover</span><span class="tag fast">Fast</span></div>
       </div>
     </div>
@@ -437,6 +468,7 @@ footer a{color:var(--ink-2)}
           marketing spend, <em>not</em> at marketplace volume where poly wins on price and always will.</p>
         <div class="pr"><span><span class="k">Substrate / unit</span><br><span class="v win">₹0.20</span></span>
           <span style="text-align:right"><span class="k">Kraft + poly line</span><br><span class="was">₹0.40+</span></span></div>
+          <div class="sell"><span class="k">Our price</span><span class="sv">₹0.34</span></div>
         <div class="tags"><span class="tag fast">Fast</span><span class="tag cheap">Cheaper + better</span>
           <span class="tag bio">PBAT-ready</span></div>
       </div>
@@ -570,8 +602,10 @@ footer a{color:var(--ink-2)}
         own production cost, and 4–7× at market price. There is no version of this we win.</div>
       <div><b>Marketplace e-commerce mailers</b> — poly mailers run ₹1.30–6 a piece and are structurally
         30–50% cheaper than any paper alternative. Amazon and Meesho scale is a price fight, not a product fight.</div>
-      <div><b>Rigid / set-up gift boxes</b> — needs 800+ GSM equivalent stiffness. Our sheet caps at 0.4mm and
-        would need lamination onto a rigid core, which is a converting line we have not budgeted.</div>
+      <div><b>Rigid / set-up gift boxes</b> — stiffness scales with the cube of thickness, so a 1.5mm
+        greyboard core is out of reach of a 0.4mm sheet. We cannot be the structure. Supplying the printed
+        wrap and liner over someone else's core is arithmetically attractive and worth a look once the
+        Stage 1 line is proven — it is not a product we can quote today.</div>
       <div><b>Corrugated fluting</b> — the flute has to be creased into a wave without cracking. Our polymer
         content resists exactly that. We can supply the printed liner facing; we cannot be the core.</div>
       <div><b>Direct-contact food wraps</b> — FSSAI food-contact certification for the HDPE fraction is an

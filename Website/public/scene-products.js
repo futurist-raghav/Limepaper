@@ -3,7 +3,10 @@ import * as THREE from './vendor/three.module.min.js';
 // "What we make" scene. The index page ends on the roll; this one starts there and keeps
 // going, morphing the same field of particles through the product forms the page argues for.
 //
-//   phase 0 roll -> 1 label -> 2 carton -> 3 notebook -> 4 wallpaper drop
+//   phase 0 roll -> 1 label -> 2 carton -> 3 notebook -> 4 wallpaper -> 5 carry bag
+//
+// The order tracks the page: tier one, tier two, then the tier-three premium section, so the
+// form on screen is the form the copy beside it is arguing for.
 //
 // Every constant that governs the roll — W, H, R, camera z, the entry rotation — is copied
 // from scene.js on purpose. Cross from one page to the other and the field should look like
@@ -27,7 +30,7 @@ const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
 camera.position.set(0, 0, 11.5);  // index leaves it at 9.4; pulled back for headline clearance
 
 const COUNT = innerWidth < 700 ? 22000 : 60000;
-const SHAPES = 5;
+const SHAPES = 6;
 const EDGE_FRAC = 0.52;             // share of particles pinned to outlines
 
 const W = 8.4, H = 4.7, R = 1.55;   // the index scene's sheet/roll dimensions
@@ -39,14 +42,40 @@ const RY = -0.95, COS_RY = Math.cos(RY), SIN_RY = Math.sin(RY);
 
 const shape = [];
 for (let s = 0; s < SHAPES; s++) shape.push(new Float32Array(COUNT * 3));
-const [roll, label, carton, book, drop] = shape;
+const [roll, label, carton, book, drop, bag] = shape;
 const rand = new Float32Array(COUNT);
 const edge = new Float32Array(COUNT);
+
+// A box drawn as line art. `t` picks the element and `a`/`b` place the point on it: edge
+// points land on one of the 12 edges, fill points on one of the 6 faces. Shared by the
+// carton and the carry bag's body.
+const P = [0, 0, 0];
+function boxPt(isEdge, hx, hy, hz, t, a, b) {
+  if (isEdge) {
+    const e = Math.min(11, Math.floor(t * 12));
+    const run = a * 2 - 1;                         // position along the edge
+    const axis = e % 3, corner = (e / 3) | 0;
+    const s1 = (corner & 1) ? 1 : -1, s2 = (corner & 2) ? 1 : -1;
+    if      (axis === 0) { P[0] = run * hx; P[1] = s1 * hy;  P[2] = s2 * hz; }
+    else if (axis === 1) { P[0] = s1 * hx;  P[1] = run * hy; P[2] = s2 * hz; }
+    else                 { P[0] = s1 * hx;  P[1] = s2 * hy;  P[2] = run * hz; }
+  } else {
+    const f = Math.min(5, Math.floor(t * 6));
+    const p = a * 2 - 1, q = b * 2 - 1;
+    if      (f === 0) { P[0] =  hx;    P[1] = q * hy; P[2] = p * hz; }
+    else if (f === 1) { P[0] = -hx;    P[1] = q * hy; P[2] = p * hz; }
+    else if (f === 2) { P[0] = p * hx; P[1] =  hy;    P[2] = q * hz; }
+    else if (f === 3) { P[0] = p * hx; P[1] = -hy;    P[2] = q * hz; }
+    else if (f === 4) { P[0] = p * hx; P[1] = q * hy; P[2] =  hz;    }
+    else              { P[0] = p * hx; P[1] = q * hy; P[2] = -hz;    }
+  }
+  return P;
+}
 
 for (let i = 0; i < COUNT; i++) {
   const i3 = i * 3;
   const u = Math.random(), v = Math.random(), w = Math.random();
-  const er = Math.random(), sr = Math.random();
+  const er = Math.random(), sr = Math.random(), br = Math.random();
   rand[i] = Math.random();
 
   const isEdge = er < EDGE_FRAC;
@@ -83,27 +112,8 @@ for (let i = 0; i < COUNT; i++) {
 
   // --- 2 · a carton: the twelve edges, lightly filled ---------------------------
   {
-    const BX = 1.5, BY = 1.8, BZ = 1.1;
-    let x, yy, z;
-    if (isEdge) {
-      const e = Math.min(11, Math.floor(u * 12));
-      const run = v * 2 - 1;                       // position along the edge
-      const axis = e % 3, corner = (e / 3) | 0;
-      const s1 = (corner & 1) ? 1 : -1, s2 = (corner & 2) ? 1 : -1;
-      if      (axis === 0) { x = run * BX; yy = s1 * BY;  z = s2 * BZ; }
-      else if (axis === 1) { x = s1 * BX;  yy = run * BY; z = s2 * BZ; }
-      else                 { x = s1 * BX;  yy = s2 * BY;  z = run * BZ; }
-    } else {
-      const face = Math.min(5, Math.floor(w * 6));
-      const a = u * 2 - 1, b = v * 2 - 1;
-      if      (face === 0) { x =  BX;    yy = b * BY; z = a * BZ; }
-      else if (face === 1) { x = -BX;    yy = b * BY; z = a * BZ; }
-      else if (face === 2) { x = a * BX; yy =  BY;    z = b * BZ; }
-      else if (face === 3) { x = a * BX; yy = -BY;    z = b * BZ; }
-      else if (face === 4) { x = a * BX; yy = b * BY; z =  BZ;    }
-      else                 { x = a * BX; yy = b * BY; z = -BZ;    }
-    }
-    carton[i3] = x; carton[i3 + 1] = yy; carton[i3 + 2] = z;
+    boxPt(isEdge, 1.5, 1.8, 1.1, u, v, w);
+    carton[i3] = P[0]; carton[i3 + 1] = P[1]; carton[i3 + 2] = P[2];
   }
 
   // --- 3 · an open notebook: two leaves splayed off a spine ---------------------
@@ -137,14 +147,41 @@ for (let i = 0; i < COUNT; i++) {
     drop[i3 + 1] = yy;
     drop[i3 + 2] = -x * SIN_RY + z * COS_RY;
   }
+
+  // --- 5 · a carry bag: an open-topped body with two rope handles ---------------
+  {
+    const BX = 0.86, BY = 1.12, BZ = 0.44;
+    // a slice of the outline is spent on the handles. The body on its own is just a
+    // narrow carton — the handles are the entire reason this reads as a bag.
+    if (isEdge && br > 0.7) {
+      const t = (br - 0.7) / 0.3;                  // doubles as position along the arc
+      bag[i3]     = (t - 0.5) * 0.92;
+      bag[i3 + 1] = BY + Math.sin(t * Math.PI) * 0.6;
+      bag[i3 + 2] = (sr < 0.5 ? 1 : -1) * BZ * 0.72;   // front handle or back handle
+    } else {
+      boxPt(isEdge, BX, BY, BZ, u, v, w);
+      bag[i3] = P[0]; bag[i3 + 1] = P[1]; bag[i3 + 2] = P[2];
+    }
+  }
+
 }
 
 const geo = new THREE.BufferGeometry();
-geo.setAttribute('position', new THREE.BufferAttribute(roll, 3)); // required by three; unused in shader
-for (let s = 0; s < SHAPES; s++) geo.setAttribute('aS' + s, new THREE.BufferAttribute(shape[s], 3));
+// Shape 0 doubles as `position` — three requires that attribute regardless, so using it as
+// the roll saves a buffer and a vertex-attribute slot. With seven morph targets the slot
+// count matters: position + aS1..aS6 + aRand + aEdge is nine of the sixteen guaranteed.
+geo.setAttribute('position', new THREE.BufferAttribute(shape[0], 3));
+for (let s = 1; s < SHAPES; s++) geo.setAttribute('aS' + s, new THREE.BufferAttribute(shape[s], 3));
 geo.setAttribute('aRand', new THREE.BufferAttribute(rand, 1));
 geo.setAttribute('aEdge', new THREE.BufferAttribute(edge, 1));
 geo.boundingSphere = new THREE.Sphere(new THREE.Vector3(), 16);
+
+// Built from SHAPES rather than written out, so adding a product to the sequence is a one-line
+// change up top instead of an edit in three places that silently half-works if you miss one.
+const MORPH_DECL = Array.from({ length: SHAPES - 1 }, (_, i) => `attribute vec3 aS${i + 1};`).join('\n    ');
+const MORPH_CHAIN = Array.from({ length: SHAPES - 1 }, (_, i) =>
+  `pos = mix(pos, aS${i + 1}, smoothstep(0.0, 1.0, clamp(p - ${i.toFixed(1)}, 0.0, 1.0)));`).join('\n      ');
+const LAST = (SHAPES - 1).toFixed(1);
 
 const mat = new THREE.ShaderMaterial({
   transparent: true,
@@ -157,7 +194,7 @@ const mat = new THREE.ShaderMaterial({
     uOpacity: { value: 1 },
   },
   vertexShader: /* glsl */`
-    attribute vec3 aS0, aS1, aS2, aS3, aS4;
+    ${MORPH_DECL}
     attribute float aRand, aEdge;
     uniform float uPhase, uTime, uSize;
     varying float vRand, vLoose, vEdge, vStyle, vDepth;
@@ -171,17 +208,14 @@ const mat = new THREE.ShaderMaterial({
 
       // each term is still zero while the one before it is finishing, so the chain is a
       // sequence of hand-offs, not a blend of everything at once
-      vec3 pos = aS0;
-      pos = mix(pos, aS1, smoothstep(0.0, 1.0, clamp(p,       0.0, 1.0)));
-      pos = mix(pos, aS2, smoothstep(0.0, 1.0, clamp(p - 1.0, 0.0, 1.0)));
-      pos = mix(pos, aS3, smoothstep(0.0, 1.0, clamp(p - 2.0, 0.0, 1.0)));
-      pos = mix(pos, aS4, smoothstep(0.0, 1.0, clamp(p - 3.0, 0.0, 1.0)));
+      vec3 pos = position;                   // shape 0, the roll
+      ${MORPH_CHAIN}
 
       // Scatter peaks mid-transition and returns to zero on every product, so a form breaks
       // apart into loose stock and re-settles as the next one. Driven by uPhase, NOT by the
       // staggered p: off p, a particle with a large aRand is still counted as in motion when
       // the field has settled, and the whole form sits permanently inside a cloud of haze.
-      float loose = uPhase >= ${(SHAPES - 1).toFixed(1)} ? 0.0 : wave * (0.55 + aRand * 0.9);
+      float loose = uPhase >= ${LAST} ? 0.0 : wave * (0.55 + aRand * 0.9);
 
       float ph = aRand * 43.0;
       pos += vec3(
@@ -329,5 +363,6 @@ renderer.setAnimationLoop(() => {
 
   renderer.render(scene, camera);
 });
+
 
 document.body.classList.add('scene-ready');
