@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Limepaper — What we make</title>
+<meta name="description" content="The stone paper product line: labels, tags, cartons, notebooks and wallpaper — filtered to what is fast to make, mass-market, and genuinely better than the incumbent.">
+<meta name="theme-color" content="#060605">
+<meta property="og:title" content="Limepaper — What we make">
+<meta property="og:description" content="Sixteen possible products. These are the nine worth building, and why.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23060605'/><circle cx='16' cy='16' r='7' fill='%23C6E24A'/></svg>">
+<style>
+:root{
+  --bg:#060605;
+  --ink:#F2EFE7;
+  --ink-2:#A9A49A;
+  --ink-3:#6E6A62;
+  --accent:#C6E24A;
+  --cyan:#6BD5E1;
+  --amber:#E8B84B;
+  --line:rgba(242,239,231,.12);
+  --pad:clamp(20px,5vw,64px);
+  --maxw:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-weight:400;line-height:1.5;letter-spacing:-.011em;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0;transition:opacity 1.6s ease}
+body.scene-ready #bg{opacity:1}
+/* warm floor + vignette so text always sits on enough contrast */
+.veil{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:
+    radial-gradient(82% 72% at 14% 50%,rgba(6,6,5,.94) 0%,rgba(6,6,5,.8) 38%,rgba(6,6,5,.35) 62%,rgba(6,6,5,0) 82%),
+    linear-gradient(180deg,rgba(6,6,5,.7) 0%,rgba(6,6,5,0) 22%,rgba(6,6,5,0) 74%,rgba(6,6,5,.75) 100%)}
+main{position:relative;z-index:2}
+
+/* ---------- chrome ---------- */
+#progress{position:fixed;top:0;left:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);
+  background:linear-gradient(90deg,var(--accent),rgba(198,226,74,.25));z-index:20}
+nav{position:fixed;top:0;left:0;right:0;z-index:15;display:flex;align-items:center;gap:14px;
+  padding:14px var(--pad);backdrop-filter:saturate(160%) blur(18px);-webkit-backdrop-filter:saturate(160%) blur(18px);
+  background:rgba(6,6,5,.55);border-bottom:1px solid transparent;transition:border-color .4s ease}
+nav.stuck{border-bottom-color:var(--line)}
+.brand{display:flex;align-items:center;gap:9px;font-weight:600;letter-spacing:-.02em;font-size:15px;
+  color:inherit;text-decoration:none}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px rgba(198,226,74,.65)}
+.chip{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);
+  border:1px solid var(--line);border-radius:100px;padding:4px 10px}
+nav .links{margin-left:auto;display:flex;gap:26px;font-size:13.5px;color:var(--ink-2)}
+nav a{color:inherit;text-decoration:none;transition:color .25s}
+nav a:hover{color:var(--ink)}
+nav a.on{color:var(--accent)}
+@media(max-width:820px){nav .links{display:none}}
+
+/* ---------- layout ---------- */
+section{padding:clamp(96px,16vh,190px) var(--pad);max-width:var(--maxw);margin:0 auto;scroll-margin-top:64px}
+.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+h1{font-size:clamp(2.9rem,8.2vw,6.1rem);font-weight:600;line-height:.94;letter-spacing:-.045em}
+h2{font-size:clamp(2rem,5.2vw,3.9rem);font-weight:600;line-height:1.02;letter-spacing:-.038em;max-width:17ch}
+h3{font-size:clamp(1.05rem,1.6vw,1.22rem);font-weight:600;letter-spacing:-.02em}
+p.lead{font-size:clamp(1.1rem,1.9vw,1.45rem);color:var(--ink-2);max-width:50ch;line-height:1.45;margin-top:26px;letter-spacing:-.02em}
+p.body{font-size:clamp(1rem,1.35vw,1.08rem);color:var(--ink-2);max-width:62ch;line-height:1.62;margin-top:20px}
+.hi{color:var(--ink)}
+.grid{display:grid;gap:14px;margin-top:44px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:860px){.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.g3,.g2{grid-template-columns:1fr}}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:120px}
+.hero h1 span{display:block}
+.hero h1 .b{color:var(--ink-3)}
+.scroll-cue{margin-top:auto;padding-top:60px;display:flex;align-items:center;gap:12px;font-size:12px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.scroll-cue i{display:block;width:26px;height:1px;background:var(--ink-3);animation:slide 2.4s ease-in-out infinite}
+@keyframes slide{0%,100%{transform:translateX(0);opacity:.35}50%{transform:translateX(9px);opacity:1}}
+.count{display:grid;grid-template-columns:1fr 1fr;gap:26px clamp(20px,4vw,44px);max-width:520px;
+  margin-top:48px;padding-top:30px;border-top:1px solid var(--line)}
+@media(max-width:520px){.count{grid-template-columns:1fr}}
+.count div .n{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:600;letter-spacing:-.045em;line-height:1;font-variant-numeric:tabular-nums}
+.count div .l{margin-top:9px;font-size:13px;color:var(--ink-2);max-width:24ch;line-height:1.45}
+.count .mut .n{color:var(--ink-3)}
+
+/* ---------- filter legend ---------- */
+.legend{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;margin-top:44px;
+  border:1px solid var(--line);border-radius:18px;overflow:hidden;backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%);}
+.legend div{padding:22px 18px;background:linear-gradient(180deg,rgba(18,18,16,.82),rgba(10,10,9,.7))}
+.legend .ic{font-size:11px;letter-spacing:.16em;color:var(--accent);line-height:1;margin-bottom:13px}
+.legend strong{display:block;font-weight:500;font-size:14px;margin-bottom:6px;letter-spacing:-.015em}
+.legend p{font-size:12.5px;color:var(--ink-2);line-height:1.5}
+@media(max-width:900px){.legend{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.legend{grid-template-columns:1fr}}
+
+/* ---------- product card ---------- */
+.prod{border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;
+  background:linear-gradient(180deg,rgba(18,18,16,.86),rgba(10,10,9,.74));
+  backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%);
+  transition:border-color .4s ease,transform .4s cubic-bezier(.22,1,.36,1)}
+.prod:hover{border-color:rgba(242,239,231,.26);transform:translateY(-3px)}
+/* the shots are studio photos on white — held near-monochrome and dimmed so they read as
+   specimens on the dark field rather than lightboxes punched through it. Colour on hover. */
+.prod .shot{position:relative;aspect-ratio:4/3;overflow:hidden;background:#0a0a09;
+  border-bottom:1px solid var(--line)}
+.prod .shot img{width:100%;height:100%;object-fit:cover;display:block;
+  filter:grayscale(.78) brightness(.6) contrast(1.16);
+  transition:transform .8s cubic-bezier(.22,1,.36,1),filter .55s ease}
+.prod:hover .shot img{transform:scale(1.05);filter:grayscale(0) brightness(.94) contrast(1.04)}
+.prod .shot::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(115% 92% at 50% 32%,rgba(6,6,5,0) 34%,rgba(6,6,5,.5) 100%),
+    linear-gradient(180deg,rgba(6,6,5,.3) 0%,rgba(6,6,5,0) 38%,rgba(6,6,5,.74) 100%)}
+.prod .rank{position:absolute;top:12px;left:12px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  padding:5px 10px;border-radius:100px;background:rgba(6,6,5,.82);border:1px solid var(--line);
+  color:var(--ink-2);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.prod .rank.hot{color:#0b0b0a;background:var(--accent);border-color:transparent;font-weight:600}
+.prod .meat{padding:22px clamp(18px,2.2vw,24px) 24px;display:flex;flex-direction:column;flex:1}
+.prod .sub{margin-top:7px;font-size:12.5px;color:var(--ink-3);letter-spacing:.01em}
+.prod .why{margin-top:15px;font-size:13.8px;color:var(--ink-2);line-height:1.58}
+.prod .why b{color:var(--ink);font-weight:500}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:18px}
+.tag{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;padding:4px 9px;border-radius:100px;
+  border:1px solid var(--line);color:var(--ink-3);white-space:nowrap}
+.tag.fast{color:var(--accent);border-color:rgba(198,226,74,.4)}
+.tag.mass{color:var(--ink);border-color:rgba(242,239,231,.3)}
+.tag.first{color:var(--cyan);border-color:rgba(107,213,225,.4)}
+.tag.cheap{color:var(--amber);border-color:rgba(232,184,75,.4)}
+.tag.bio{color:#8FD98A;border-color:rgba(143,217,138,.4)}
+
+/* ---------- price row inside card ---------- */
+.pr{margin-top:16px;padding:13px 15px;border-radius:12px;background:rgba(242,239,231,.045);
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.pr .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.pr .v{font-size:15px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.pr .v.win{color:var(--accent)}
+.pr .was{font-size:12.5px;color:var(--ink-3);text-decoration:line-through;font-variant-numeric:tabular-nums}
+
+/* ---------- versus bars ---------- */
+.cmp{margin-top:48px;display:flex;flex-direction:column;gap:30px}
+.cmp .row{border-top:1px solid var(--line);padding-top:20px}
+.cmp .title{display:flex;justify-content:space-between;align-items:baseline;gap:16px;font-size:14px;color:var(--ink-2)}
+.cmp .title b{color:var(--ink);font-weight:500}
+.bar{margin-top:13px;display:grid;grid-template-columns:150px 1fr;align-items:center;gap:16px;font-size:13px}
+.bar + .bar{margin-top:8px}
+.bar .who{color:var(--ink-2)}
+.bar .track{height:21px;position:relative}
+.bar .fill{display:block;height:100%;border-radius:0 5px 5px 0;width:0;transition:width 1.1s cubic-bezier(.22,1,.36,1)}
+.in .bar .fill{width:var(--w)}
+.bar.us .fill{background:linear-gradient(90deg,var(--accent),rgba(198,226,74,.5))}
+.bar.them .fill{background:rgba(242,239,231,.17)}
+.bar .val{position:absolute;top:50%;transform:translateY(-50%);left:calc(var(--w) + 12px);white-space:nowrap;
+  color:var(--ink);font-variant-numeric:tabular-nums}
+.bar.them .val{color:var(--ink-2)}
+@media(max-width:620px){.bar{grid-template-columns:1fr}.bar .val{position:static;transform:none;margin-top:6px;display:block}}
+
+/* ---------- variant split ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:44px}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.vr{border:1px solid var(--line);border-radius:20px;padding:clamp(22px,2.6vw,30px);
+  background:linear-gradient(180deg,rgba(18,18,16,.86),rgba(10,10,9,.7));backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%);}
+.vr.bio{border-color:rgba(143,217,138,.32);
+  background:linear-gradient(180deg,rgba(16,24,16,.88),rgba(9,12,9,.74))}
+.vr .tag-h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.vr.bio .tag-h{color:#8FD98A}
+.vr .amt{font-size:clamp(1.5rem,3vw,2rem);font-weight:600;letter-spacing:-.04em;margin:14px 0 4px;font-variant-numeric:tabular-nums}
+.vr ul{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:11px}
+.vr li{font-size:13.5px;color:var(--ink-2);padding-left:18px;position:relative;line-height:1.52}
+.vr li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:1px;background:var(--ink-3)}
+.vr.bio li::before{background:rgba(143,217,138,.6)}
+
+/* ---------- matrix table ---------- */
+.wrap{overflow-x:auto;margin-top:44px;border:1px solid var(--line);border-radius:18px;
+  background:linear-gradient(180deg,rgba(18,18,16,.84),rgba(10,10,9,.7));backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%);}
+table{border-collapse:collapse;width:100%;min-width:660px;font-size:13.5px}
+th,td{text-align:left;padding:15px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);font-weight:500;
+  background:rgba(242,239,231,.045);white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(242,239,231,.022)}
+td.p{color:var(--ink);font-weight:500}
+td .m{display:block;margin-top:4px;font-size:12px;color:var(--ink-3);font-weight:400}
+.yes{color:var(--accent);font-weight:600}
+.no{color:var(--ink-3)}
+.part{color:var(--amber)}
+
+/* ---------- strip ---------- */
+.strip{margin-top:44px;border:1px solid var(--line);border-radius:18px;padding:24px 26px;
+  background:linear-gradient(180deg,rgba(24,20,14,.82),rgba(12,11,8,.7));backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%);}
+.strip h3{margin-bottom:14px}
+.strip .list{display:flex;flex-direction:column;gap:11px}
+.strip .list div{font-size:13.5px;color:var(--ink-2);line-height:1.55;padding-left:20px;position:relative}
+.strip .list div::before{content:"×";position:absolute;left:0;top:-1px;color:var(--ink-3);font-size:15px}
+.strip .list b{color:var(--ink-2);font-weight:600}
+
+/* ---------- cta ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;margin-top:34px;padding:15px 26px;border-radius:100px;
+  background:var(--ink);color:#0a0a08;text-decoration:none;font-size:15px;font-weight:550;letter-spacing:-.015em;
+  transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(242,239,231,.14)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);margin-left:12px}
+footer{border-top:1px solid var(--line);padding:44px var(--pad) 60px;max-width:var(--maxw);margin:0 auto;
+  font-size:12.5px;color:var(--ink-3);line-height:1.7;position:relative;z-index:2}
+footer a{color:var(--ink-2)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1)}
+.rv.in{opacity:1;transform:none}
+.rv[data-d="1"]{transition-delay:.07s}.rv[data-d="2"]{transition-delay:.14s}
+.rv[data-d="3"]{transition-delay:.21s}.rv[data-d="4"]{transition-delay:.28s}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .bar .fill{transition:none;width:var(--w)}
+  .prod,.prod .shot img{transition:none}
+  .scroll-cue i{animation:none}
+}
+</style>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+<nav id="nav">
+  <a class="brand" href="./index.html"><span class="dot"></span>Limepaper</a>
+  <span class="chip">Product line</span>
+  <span class="links">
+    <a href="./index.html#material">Material</a>
+    <a href="./index.html#numbers">Numbers</a>
+    <a href="./sku.html" class="on">What we make</a>
+    <a href="./index.html#plan">Plan</a>
+    <a href="./index.html#ask">The ask</a>
+  </span>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="rv"><p class="eyebrow">The product line</p></div>
+  <h1 class="rv" data-d="1"><span>Sixteen products.</span><span class="b">Nine worth making.</span></h1>
+  <p class="lead rv" data-d="2">The same sheet becomes a label, a carton, a notebook or a wall covering. Most of
+    those are bad businesses. This page is only the ones that survive the filter — and what makes each one survive it.</p>
+  <div class="count rv" data-d="3">
+    <div><div class="n">9</div><div class="l">Products that clear every gate below</div></div>
+    <div><div class="n" style="color:var(--accent)">2×</div><div class="l">Substrate cost advantage where we win, at production cost</div></div>
+    <div><div class="n" style="color:var(--cyan)">1</div><div class="l">Category with no Indian stone-paper incumbent at all</div></div>
+    <div class="mut"><div class="n">7</div><div class="l">Deliberately not built — listed at the bottom</div></div>
+  </div>
+  <div class="scroll-cue rv" data-d="4"><i></i> The filter</div>
+</section>
+
+<section id="filter">
+  <div class="rv"><p class="eyebrow">The filter</p>
+    <h2>Five gates. A product has to clear at least three.</h2>
+    <p class="body">Stone paper can physically become almost any paper product. That is exactly why a product
+      list is worthless without a filter — the interesting question is never "can we make it," it is
+      <span class="hi">"does making it beat the thing it replaces."</span></p></div>
+  <div class="legend rv" data-d="1">
+    <div><div class="ic">01</div><strong>Fast to make</strong>
+      <p>Runs on the Stage&nbsp;1 line as bought — extrude, cut, convert. No new machine, no new process step.</p></div>
+    <div><div class="ic">02</div><strong>Mass market</strong>
+      <p>Volume exists in India today, at a scale a small line can feed without needing a brand to be famous first.</p></div>
+    <div><div class="ic">03</div><strong>First mover</strong>
+      <p>No Indian stone-paper player is serving it — the incumbent is a different material entirely.</p></div>
+    <div><div class="ic">04</div><strong>Cheaper <em>and</em> better</strong>
+      <p>Beats the incumbent on substrate cost <em>and</em> on a physical property the buyer already pays for.</p></div>
+    <div><div class="ic">05</div><strong>PBAT-ready</strong>
+      <p>Can be run in the compostable-binder variant without redesigning the product or losing the property.</p></div>
+  </div>
+</section>
+
+<section id="ship">
+  <div class="rv"><p class="eyebrow">Tier one · build first</p>
+    <h2>Cheaper than the incumbent, and better at the job.</h2>
+    <p class="body">These six clear four or five gates each. All of them run on the Stage&nbsp;1 line with no
+      additional equipment, and in every case the property the buyer is already paying extra for — waterproof,
+      tear-proof, wipe-clean — is something stone paper has natively and the incumbent has to add with a
+      coating or a lamination step.</p></div>
+
+  <div class="grid g3">
+
+    <div class="prod rv">
+      <div class="shot"><span class="rank hot">Best margin/tonne</span>
+        <img src="./sku/label-adhesive.jpg" alt="Blank self-adhesive label with one corner peeled up" loading="lazy" width="720" height="540"></div>
+      <div class="meat">
+        <h3>Self-adhesive labels</h3>
+        <div class="sub">Pressure-sensitive · 100×150mm face</div>
+        <p class="why">The incumbent for anything that gets wet or handled is <b>PVC or PP synthetic paper</b> —
+          Cosmo Films, Tirupati and others. That is 100% petroleum. We are the tree-free, marble-waste option
+          with the same waterproof and tear-proof behaviour, at half the substrate cost.</p>
+        <div class="pr"><span><span class="k">Substrate / unit</span><br><span class="v win">₹0.03</span></span>
+          <span style="text-align:right"><span class="k">Paper face stock</span><br><span class="was">₹0.06</span></span></div>
+        <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
+          <span class="tag first">First mover</span><span class="tag cheap">Cheaper + better</span></div>
+      </div>
+    </div>
+
+    <div class="prod rv" data-d="1">
+      <div class="shot"><span class="rank">Proven globally</span>
+        <img src="./sku/tag-hang.jpg" alt="Blank kraft hang tag with string loop" loading="lazy" width="720" height="540"></div>
+      <div class="meat">
+        <h3>Hang tags</h3>
+        <div class="sub">Garment &amp; footwear · 40×80mm</div>
+        <p class="why">Not a theory — <b>Adidas already uses stone-paper hang tags globally</b> on footwear. The
+          use case is proven, exportable, and India's garment export belt is a buyer base that already ships to
+          brands with ESG packaging mandates.</p>
+        <div class="pr"><span><span class="k">Substrate / unit</span><br><span class="v win">₹0.02</span></span>
+          <span style="text-align:right"><span class="k">Kraft card tag</span><br><span class="was">₹0.05</span></span></div>
+        <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
+          <span class="tag cheap">Cheaper + better</span><span class="tag bio">PBAT-ready</span></div>
+      </div>
+    </div>
+
+    <div class="prod rv" data-d="2">
+      <div class="shot"><span class="rank hot">Highest structural fit</span>
+        <img src="./sku/carton-mono.jpg" alt="Small plain white pharmaceutical mono-carton" loading="lazy" width="720" height="540"></div>
+      <div class="meat">
+        <h3>Pharma mono-cartons</h3>
+        <div class="sub">Secondary packaging · 250–400 GSM</div>
+        <p class="why">Pharma is moving to paperboard for secondary cartons specifically because water-based
+          coatings now hit 95% humidity resistance. <b>They are already paying for moisture resistance.</b>
+          We have it without the coating step — and Rajasthan/Gujarat is the pharma corridor.</p>
+        <div class="pr"><span><span class="k">Substrate / blank</span><br><span class="v win">₹0.55</span></span>
+          <span style="text-align:right"><span class="k">Duplex board</span><br><span class="was">₹1.12</span></span></div>
+        <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
+          <span class="tag cheap">Cheaper + better</span></div>
+      </div>
+    </div>
+
+    <div class="prod rv" data-d="3">
+      <div class="shot"><span class="rank">Coating step removed</span>
+        <img src="./sku/label-menu.jpg" alt="Blank laminated menu card" loading="lazy" width="720" height="540"></div>
+      <div class="meat">
+        <h3>Menus &amp; placemats</h3>
+        <div class="sub">Wipe-clean · A4 and larger</div>
+        <p class="why">A restaurant menu is paper plus a plastic lamination — two materials, two process steps,
+          and it still delaminates. <b>We are one material that is already wipe-clean</b>, at less than half the
+          substrate cost before the lamination is even priced in.</p>
+        <div class="pr"><span><span class="k">Substrate / unit</span><br><span class="v win">₹0.39</span></span>
+          <span style="text-align:right"><span class="k">Paper + lamination</span><br><span class="was">₹0.81+</span></span></div>
+        <div class="tags"><span class="tag fast">Fast</span><span class="tag cheap">Cheaper + better</span>
+          <span class="tag first">First mover</span></div>
+      </div>
+    </div>
+
+    <div class="prod rv" data-d="1">
+      <div class="shot"><span class="rank">Fastest to revenue</span>
+        <img src="./sku/notebook.jpg" alt="Plain hardcover notebook with elastic band" loading="lazy" width="720" height="540"></div>
+      <div class="meat">
+        <h3>Corporate gifting notebooks</h3>
+        <div class="sub">A5 hardcover · 172–200pg</div>
+        <p class="why">The one segment with <b>proven willingness to pay a 2–5× premium</b> in India today. A
+          company buying 500 diaries for a CSR handout is not price-shopping against a ₹40 Classmate — it is
+          buying a sustainability story it can put a logo on.</p>
+        <div class="pr"><span><span class="k">India retail, stone paper</span><br><span class="v">₹236–498</span></span>
+          <span style="text-align:right"><span class="k">Conventional</span><br><span class="v" style="color:var(--ink-3)">₹40–150</span></span></div>
+        <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
+          <span class="tag bio">PBAT-ready</span></div>
+      </div>
+    </div>
+
+    <div class="prod rv" data-d="2">
+      <div class="shot"><span class="rank">Liner layer only</span>
+        <img src="./sku/carton.jpg" alt="Open plain kraft folding carton box" loading="lazy" width="720" height="540"></div>
+      <div class="meat">
+        <h3>Folding cartons</h3>
+        <div class="sub">FMCG &amp; consumer goods · 250–350 GSM</div>
+        <p class="why">Native 0.1–0.4mm gauge lands exactly on folding-box-board thickness — <b>a drop-in
+          substrate swap</b>, no redesign at the converter's end. Same moisture-resistance argument as pharma,
+          against a much larger volume base.</p>
+        <div class="pr"><span><span class="k">Substrate / blank</span><br><span class="v win">₹0.50</span></span>
+          <span style="text-align:right"><span class="k">FBB / SBS board</span><br><span class="was">₹1.04</span></span></div>
+        <div class="tags"><span class="tag fast">Fast</span><span class="tag mass">Mass market</span>
+          <span class="tag cheap">Cheaper + better</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="firstmover">
+  <div class="rv"><p class="eyebrow">Tier two · the white space</p>
+    <h2>Where the incumbent is plastic and nobody has shown up with this yet.</h2>
+    <p class="body">These are not cheaper-per-unit plays. They are categories where the thing being replaced is
+      <span class="hi">100% petroleum plastic</span>, the buyer is choosing on performance rather than price,
+      and no Indian stone-paper supplier is currently in the room.</p></div>
+
+  <div class="grid g3">
+
+    <div class="prod rv">
+      <div class="shot"><span class="rank hot">No India incumbent</span>
+        <img src="./sku/wallpaper-peel-stick.jpg" alt="Peel-and-stick wallpaper roll with backing peeled" loading="lazy" width="720" height="540"></div>
+      <div class="meat">
+        <h3>Peel-and-stick wallpaper</h3>
+        <div class="sub">Self-adhesive · 0.53m × 10m rolls</div>
+        <p class="why">Indian wallpaper fails in exactly one predictable way: <b>mould and peeling in humid rooms</b>
+          — bathrooms, kitchens, monsoon walls. We are natively waterproof. And peel-and-stick sidesteps the one
+          real technical problem, since our dense sheet won't take wet paste.</p>
+        <div class="pr"><span><span class="k">Substrate</span><br><span class="v win">≈₹126/m²</span></span>
+          <span style="text-align:right"><span class="k">Retail category sells at</span><br><span class="v">₹570–1,320/m²</span></span></div>
+        <div class="tags"><span class="tag first">First mover</span><span class="tag mass">Mass market</span>
+          <span class="tag cheap">Cheaper + better</span></div>
+      </div>
+    </div>
+
+    <div class="prod rv" data-d="1">
+      <div class="shot"><span class="rank">vs. Correx &amp; vinyl</span>
+        <img src="./sku/label-signage.jpg" alt="Blank rigid outdoor signage panel" loading="lazy" width="720" height="540"></div>
+      <div class="meat">
+        <h3>Outdoor signage panels</h3>
+        <div class="sub">0.3–0.4mm rigid sheet · 600×900mm</div>
+        <p class="why">Election boards, site hoardings, retail signage — currently corrugated plastic or vinyl,
+          both pure petroleum, both landfill. <b>Waterproof and UV-exposed is our home turf</b>, and the
+          plastic-alternative angle is real here rather than cosmetic.</p>
+        <div class="pr"><span><span class="k">Substrate / panel</span><br><span class="v win">≈₹10.58</span></span>
+          <span style="text-align:right"><span class="k">Correx / vinyl</span><br><span class="was" style="text-decoration:none">Quote pending</span></span></div>
+        <div class="tags"><span class="tag first">First mover</span><span class="tag fast">Fast</span></div>
+      </div>
+    </div>
+
+    <div class="prod rv" data-d="2">
+      <div class="shot"><span class="rank">Premium D2C only</span>
+        <img src="./sku/mailer.jpg" alt="Plain kraft mailer envelope" loading="lazy" width="720" height="540"></div>
+      <div class="meat">
+        <h3>Waterproof mailers</h3>
+        <div class="sub">Kraft-format · 250×350mm</div>
+        <p class="why">A paper mailer normally needs a poly lining to survive rain. <b>We don't</b> — one
+          material, no lining, still waterproof. Aimed at premium D2C brands who treat the unboxing as
+          marketing spend, <em>not</em> at marketplace volume where poly wins on price and always will.</p>
+        <div class="pr"><span><span class="k">Substrate / unit</span><br><span class="v win">₹0.20</span></span>
+          <span style="text-align:right"><span class="k">Kraft + poly line</span><br><span class="was">₹0.40+</span></span></div>
+        <div class="tags"><span class="tag fast">Fast</span><span class="tag cheap">Cheaper + better</span>
+          <span class="tag bio">PBAT-ready</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="cost">
+  <div class="rv"><p class="eyebrow">Cheaper and better</p>
+    <h2>Substrate cost, per unit, against what it replaces.</h2>
+    <p class="body">Production cost of the raw substrate only — what the material in the product costs us to
+      make, against what the incumbent material costs to make. Conversion, printing and margin sit on top of
+      both sides equally and are excluded. <span class="hi">In every product on this page that clears the
+      "cheaper" gate, we are at roughly half.</span></p></div>
+
+  <div class="cmp rv" data-d="1">
+    <div class="row">
+      <div class="title"><b>Pharma mono-carton</b><span>₹ per die-cut blank</span></div>
+      <div class="bar us" style="--w:24%"><span class="who">Stone paper</span>
+        <span class="track"><span class="fill"></span><span class="val">₹0.55</span></span></div>
+      <div class="bar them" style="--w:49%"><span class="who">Duplex board</span>
+        <span class="track"><span class="fill"></span><span class="val">₹1.12</span></span></div>
+    </div>
+    <div class="row">
+      <div class="title"><b>Folding carton</b><span>₹ per die-cut blank</span></div>
+      <div class="bar us" style="--w:22%"><span class="who">Stone paper</span>
+        <span class="track"><span class="fill"></span><span class="val">₹0.50</span></span></div>
+      <div class="bar them" style="--w:46%"><span class="who">FBB / SBS board</span>
+        <span class="track"><span class="fill"></span><span class="val">₹1.04</span></span></div>
+    </div>
+    <div class="row">
+      <div class="title"><b>Menu / placemat</b><span>₹ per A4 unit, before the incumbent's lamination step</span></div>
+      <div class="bar us" style="--w:19%"><span class="who">Stone paper</span>
+        <span class="track"><span class="fill"></span><span class="val">₹0.39</span></span></div>
+      <div class="bar them" style="--w:40%"><span class="who">Paper + lamination</span>
+        <span class="track"><span class="fill"></span><span class="val">₹0.81+</span></span></div>
+    </div>
+    <div class="row">
+      <div class="title"><b>Kraft mailer</b><span>₹ per envelope</span></div>
+      <div class="bar us" style="--w:20%"><span class="who">Stone paper</span>
+        <span class="track"><span class="fill"></span><span class="val">₹0.20</span></span></div>
+      <div class="bar them" style="--w:40%"><span class="who">Kraft paper</span>
+        <span class="track"><span class="fill"></span><span class="val">₹0.40</span></span></div>
+    </div>
+  </div>
+
+  <p class="body rv" data-d="2">One correction worth making before anyone quotes these back at us: this holds
+    <span class="hi">at production cost, in products specified by weight</span> — cartons, labels, mailers.
+    It reverses for loose sheet paper, where the honest comparison is at matched stiffness rather than matched
+    weight, and our sheet is roughly 2.2–2.8× denser. That is why loose A4 copier paper is on the
+    not-building list, not on this page.</p>
+</section>
+
+<section id="variants">
+  <div class="rv"><p class="eyebrow">Two binder variants</p>
+    <h2>The same line runs a compostable version.</h2>
+    <p class="body">The 18% binder is the entire end-of-life problem, and it is also the one input we can swap
+      without touching the machine. PBAT — polybutylene adipate-terephthalate — is compostable-certified, sold
+      in film grade in Jaipur today, and runs on the same twin-screw line after a screw-temperature re-tune.
+      <span class="hi">It costs about 12–15% more on the binder line, not 130% more.</span></p></div>
+
+  <div class="split rv" data-d="1">
+    <div class="vr">
+      <div class="tag-h">Variant A · standard</div>
+      <div class="amt">HDPE</div>
+      <div class="sub" style="font-size:13px;color:var(--ink-2)">₹100–115/kg, film grade</div>
+      <ul>
+        <li>Commodity resin, deep domestic stock, no supply risk</li>
+        <li>Best stiffness and moisture barrier — the crisp, paper-like hand-feel is this</li>
+        <li>Not biodegradable. UV-photodegrades over 14–18 months into calcium carbonate plus microplastic fragments</li>
+        <li>Right for: signage, mailers, industrial labels, anything durable-by-design where end-of-life is years away</li>
+      </ul>
+    </div>
+    <div class="vr bio">
+      <div class="tag-h">Variant B · compostable binder</div>
+      <div class="amt">PBAT</div>
+      <div class="sub" style="font-size:13px;color:var(--ink-2)">₹128–130/kg film grade — a 12–15% binder premium</div>
+      <ul>
+        <li>IS 17088 / EN 13432 / OK&nbsp;Compost certified — India's own standard, not just an EU mark</li>
+        <li>Film-grade supply exists in Jaipur, local to the plant, plus deeper Gujarat supply</li>
+        <li>Honest caveat: certified for <em>industrial</em> composting — ~58°C, controlled microbes. It is not "degrades anywhere"</li>
+        <li>Softer than HDPE, closer to LDPE — needs a trial batch to confirm the hand-feel at our filler loading</li>
+        <li>Right for: gifting notebooks, hang tags, food-adjacent packaging — anywhere the buyer's ESG team reads the spec sheet</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap rv" data-d="2">
+    <table>
+      <thead><tr><th>Product</th><th>HDPE variant</th><th>PBAT variant</th><th>Which one we lead with</th></tr></thead>
+      <tbody>
+        <tr><td class="p">Gifting notebooks<span class="m">Corporate / CSR buyers</span></td>
+          <td class="yes">Works</td><td class="yes">Works</td>
+          <td>PBAT — the buyer is purchasing the sustainability claim, so the claim has to survive scrutiny</td></tr>
+        <tr><td class="p">Hang tags<span class="m">Garment &amp; footwear export</span></td>
+          <td class="yes">Works</td><td class="yes">Works</td>
+          <td>PBAT — export brands are the ones with hard compostability targets</td></tr>
+        <tr><td class="p">Pharma &amp; folding cartons<span class="m">Secondary packaging</span></td>
+          <td class="yes">Works</td><td class="part">Needs trial</td>
+          <td>HDPE first — moisture barrier is the whole sale here, and it is the stronger of the two</td></tr>
+        <tr><td class="p">Self-adhesive labels<span class="m">vs. PVC/PP synthetic paper</span></td>
+          <td class="yes">Works</td><td class="part">Needs trial</td>
+          <td>HDPE — but PBAT is the version that fully retires the plastic argument</td></tr>
+        <tr><td class="p">Outdoor signage<span class="m">UV-exposed, multi-season</span></td>
+          <td class="yes">Works</td><td class="no">Wrong fit</td>
+          <td>HDPE only — a compostable binder outdoors is a defect, not a feature</td></tr>
+        <tr><td class="p">Waterproof mailers<span class="m">Premium D2C</span></td>
+          <td class="yes">Works</td><td class="yes">Works</td>
+          <td>PBAT — single-use by definition, so end-of-life is the whole question</td></tr>
+        <tr><td class="p">Peel-and-stick wallpaper<span class="m">Interior wall covering</span></td>
+          <td class="yes">Works</td><td class="no">Wrong fit</td>
+          <td>HDPE only — a wall covering that composts is a wall covering that fails</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="body rv" data-d="2" style="font-size:13.5px;color:var(--ink-3)">"Needs trial" means exactly that:
+    the material is compatible with the line, but the moisture-barrier and stiffness numbers at our filler
+    loading are unproven until a compounding batch is run. We are not going to claim them before we have run one.</p>
+</section>
+
+<section id="not">
+  <div class="rv"><p class="eyebrow">For completeness</p>
+    <h2>The seven we are not building.</h2>
+    <p class="body">A product list that only contains winners is a marketing document. These failed the filter
+      for specific, checkable reasons — and knowing why is what stops us wandering into them later.</p></div>
+  <div class="strip rv" data-d="1">
+    <h3>Ruled out, and why</h3>
+    <div class="list">
+      <div><b>Loose A4 / A3 copier paper</b> — at matched stiffness we are 2–3× the cost of wood-pulp at our
+        own production cost, and 4–7× at market price. There is no version of this we win.</div>
+      <div><b>Marketplace e-commerce mailers</b> — poly mailers run ₹1.30–6 a piece and are structurally
+        30–50% cheaper than any paper alternative. Amazon and Meesho scale is a price fight, not a product fight.</div>
+      <div><b>Rigid / set-up gift boxes</b> — needs 800+ GSM equivalent stiffness. Our sheet caps at 0.4mm and
+        would need lamination onto a rigid core, which is a converting line we have not budgeted.</div>
+      <div><b>Corrugated fluting</b> — the flute has to be creased into a wave without cracking. Our polymer
+        content resists exactly that. We can supply the printed liner facing; we cannot be the core.</div>
+      <div><b>Direct-contact food wraps</b> — FSSAI food-contact certification for the HDPE fraction is an
+        unverified gate. Not a formality, and not something to discover after taking an order.</div>
+      <div><b>Mass-market gravure wallpaper</b> — the volume segment prints on rotogravure with water-based ink,
+        which our surface will not absorb. We fit the digital UV/latex custom-print niche instead, and only that.</div>
+      <div><b>PVC ID / access cards</b> — a mature, very cheap, very thin incumbent. Our card-grade stiffness at
+        that gauge is unverified and the displacement case is the weakest in the catalog.</div>
+    </div>
+  </div>
+  <p class="body rv" data-d="2">Every number on this page is derived from published formulation ratios and current
+    Rajasthan input pricing, not from a vendor quotation or our own production run — there isn't one yet. They are
+    planning references to check real quotes against. The full working, including the arithmetic behind each
+    per-unit figure and the sources under it, is in the product catalog inside the brief.</p>
+  <p class="rv" data-d="3">
+    <a class="btn" href="mailto:admin@raghavagarwal.com?subject=Limepaper%20—%20product%20catalog">Request the product catalog</a>
+    <a class="btn ghost" href="./index.html">Back to the brief</a>
+  </p>
+</section>
+
+</main>
+
+<footer>
+  Limepaper · Kishangarh / Rajsamand, Rajasthan · Product line, August 2026.<br>
+  Per-unit substrate costs are derived arithmetic — GSM × area × price per tonne — built on input pricing from
+  Kishangarh–Makrana marketplace listings and published 80/18/2 formulation ratios, not vendor quotations.
+  Retail comparisons: Amazon India, Karst, IndiaMART listings. PBAT pricing: IndiaMART supplier quotes, Jaipur
+  and Vadodara, August 2026. Product photography is illustrative of format only — not images of Limepaper output,
+  which does not exist until the Stage 1 line is commissioned. All figures directional, none audited.
+</footer>
+
+<script type="module" src="./scene-products.js"></script>
+<script>
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  const bar = document.getElementById('progress'), nav = document.getElementById('nav');
+  addEventListener('scroll', () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.transform = `scaleX(${max > 0 ? scrollY / max : 0})`;
+    nav.classList.toggle('stuck', scrollY > 24);
+  }, { passive: true });
+</script>
+</body>
+</html>
