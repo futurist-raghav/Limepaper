@@ -25,21 +25,16 @@
 
 ## 3.3 Demand drivers
 
-* Government single-use-plastic restrictions (India's 2022 SUP rules and state-level bans) push converters toward substitutes — estimated +1.5% CAGR impact globally.
-
-* Corporate ESG/sustainability mandates from FMCG and e-commerce brands (+0.9% CAGR impact) — water-free, tree-free claims fit procurement scorecards.
-
-* Water stress: stone paper uses ~0 litres of process water versus ~200 tonnes of water per tonne for wood-pulp paper — a strong pitch in a water-stressed state like Rajasthan.
-
-* Energy: ~700 kWh/tonne versus ~2,908 kWh/tonne for conventional paper (76% less) — pairs well with Rajasthan's solar capacity for a low-carbon production claim.
+* SUP restrictions (India's 2022 rules, state bans) push converters to substitutes — est. +1.5% CAGR impact globally.
+* Corporate ESG mandates from FMCG/e-commerce (+0.9% CAGR impact) — water-free, tree-free claims fit procurement scorecards.
+* Water stress: ~0 litres process water vs. ~200 tonnes/tonne for wood-pulp — strong pitch in water-stressed Rajasthan.
+* Energy: ~700 kWh/tonne vs. ~2,908 kWh/tonne conventional (76% less) — pairs with Rajasthan's solar capacity for a low-carbon claim.
 
 ## 3.4 Constraints to plan around
 
-* Ex-factory price still runs above commodity wood-pulp paper in price-sensitive segments — the pitch has to lead with performance (waterproof, tear-resistant) and ESG credentials, not price.
-
-* Recycling infrastructure for HDPE-mineral composites is limited in India — end-of-life story needs to be addressed proactively (take-back schemes, clear labelling) to avoid credibility risk.
-
-* "Plastic-free" messaging risk noted in [01_Core_Idea_Pitch_Summary.md](01_Core_Idea_Pitch_Summary.md) §2.1 — regulators and NGOs increasingly scrutinise sustainability claims.
+* Ex-factory price still runs above commodity wood-pulp paper in price-sensitive segments — pitch has to lead with performance (waterproof, tear-resistant) and ESG, not price.
+* HDPE-mineral composite recycling infrastructure is limited in India — end-of-life story (take-back schemes, clear labelling) needs to be proactive to avoid credibility risk.
+* "Plastic-free" messaging risk ([01_Core_Idea_Pitch_Summary.md](01_Core_Idea_Pitch_Summary.md) §2.1) — regulators/NGOs increasingly scrutinize sustainability claims.
 
 ## Next
 

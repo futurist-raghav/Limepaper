@@ -1,10 +1,10 @@
 # Product & SKU Catalog — Stone Paper vs. Wood-Pulp Paper, by Format and Application
 
-*Part of the Limepaper business plan — see [00_README_Index.md](00_README_Index.md) for the full document set. Added 24 August 2026; images and the premium-packaging expansion horizon (§18.9) added 30 August 2026; the standard pricing rule (§18.0.2) added 31 August 2026. This doc turns the cost/property findings already in [03_Unit_Economics.md](03_Unit_Economics.md), [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) and [16_Process_Environmental_Profile.md](16_Process_Environmental_Profile.md) into a SKU-level catalog: every standard sheet size, notebook format, carton type, label/tag type and packaging format this plant could realistically sell, with per-unit cost derived from the same ₹/tonne figures already sourced elsewhere in this plan.*
+*Part of the Limepaper business plan — see [00_README_Index.md](00_README_Index.md). Added 24 August 2026; images and premium-packaging horizon (§18.9) added 30 August; standard pricing rule (§18.0.2) added 31 August. Turns the cost/property findings in [03_Unit_Economics.md](03_Unit_Economics.md), [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) and [16_Process_Environmental_Profile.md](16_Process_Environmental_Profile.md) into a SKU-level catalog — every standard sheet size, notebook format, carton type, label/tag type and packaging format this plant could sell, with per-unit cost derived from the same ₹/tonne figures sourced elsewhere in this plan.*
 
-*§18.1–18.8 are the near-term catalog, built on the existing research docs. **§18.9 is deliberately different**: a costed expansion horizon whose arithmetic is as sound as the rest, but whose market positioning is an untested hypothesis. It is flagged as such throughout, and should be presented that way.*
+*§18.1–18.8 are the near-term catalog. **§18.9 is different**: the arithmetic is as sound as the rest, but the market positioning is an untested hypothesis — flagged throughout.*
 
-**A note on the images in this doc:** these are AI-generated reference photos showing the general *product format* (a folding carton, a hang tag, a wallpaper roll) for quick visual identification while reading — they are not photos of this plant's actual output, since no stone-paper line has been commissioned yet ([17_Factory_Operations_Plan.md](17_Factory_Operations_Plan.md) is still the Stage 1 build-out plan). Replace them with real production samples once the line is running.
+**Images:** AI-generated reference photos for visual identification of product *format* only — not this plant's actual output (no line commissioned yet, [17_Factory_Operations_Plan.md](17_Factory_Operations_Plan.md)). Replace with real production samples once running.
 
 ---
 
@@ -20,43 +20,41 @@
 
 ## 18.0 How to read this document — methodology and honesty check
 
-* **Every per-sheet/per-unit ₹ figure below is derived math, not a vendor quote or a price list.** The formula used throughout is:
+* **Every per-sheet/per-unit ₹ figure is derived math, not a vendor quote.** Formula used throughout:
 
   `Cost per sheet (₹) = GSM (g/m²) × Area (m²) × Price per tonne (₹) ÷ 1,000,000`
 
-  This is the same "illustrative, bottom-up" approach [03_Unit_Economics.md](03_Unit_Economics.md) §4.2 already uses for raw-material cost — applied one layer further down, to individual SKUs. Treat every number here the way that doc treats its own: a planning reference to sanity-check quotes against, not a number to print on a rate card.
+  Same "illustrative, bottom-up" approach [03_Unit_Economics.md](03_Unit_Economics.md) §4.2 uses for raw-material cost, one layer further down. A planning reference to sanity-check quotes against — not a rate-card number.
 
-* **Two different ₹/tonne inputs are used, and mixing them up will give you the wrong answer:**
-  * *Production cost* (what it costs **you** to make a tonne) — stone paper ≈ ₹24,000–32,000/t materials+energy ([03_Unit_Economics.md](03_Unit_Economics.md) §4.6.1); wood-pulp paper ≈ ₹42,000–73,000/t materials+energy (same table).
-  * *Market/sell price* (what a tonne actually **trades for**) — raw stone paper sheet/roll stock ≈ ₹60,000–108,000+/t wholesale, up to ₹94,000–108,000/t at Chinese export-FOB ([13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.4.1); conventional kraft/packaging paper ex-mill ≈ ₹32,500–33,000/t, writing/printing grade ≈ ₹45,000–55,000/t all-in production cost (§13.2.1). Retail finished goods (notebooks, converted packaging) sit at a further **2–5x premium** over raw material on both sides of the comparison.
-  * The tables below label which basis each column uses. Don't quote a customer a "production cost" number — that's your cost, not a price.
+* **Two different ₹/tonne inputs, don't mix them up:**
+  * *Production cost* (what it costs **you**) — stone paper ≈ ₹24,000–32,000/t; wood-pulp ≈ ₹42,000–73,000/t (both materials+energy, [03_Unit_Economics.md](03_Unit_Economics.md) §4.6.1).
+  * *Market/sell price* — raw stone paper sheet/roll ≈ ₹60,000–108,000+/t wholesale, up to ₹94,000–108,000/t Chinese export-FOB ([13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.4.1); conventional kraft/packaging ex-mill ≈ ₹32,500–33,000/t, writing/printing ≈ ₹45,000–55,000/t (§13.2.1). Retail finished goods sit a further **2–5x** over raw material on both sides.
+  * Tables below label which basis each column uses. Never quote a customer a "production cost" number — that's your cost, not a price.
 
-* **GSM (grams per square metre) is a paper-industry convention; stone paper is usually spec'd by thickness (mm/micron) instead**, because it's a compounded mineral/polymer sheet, not a fibre mat. [16_Process_Environmental_Profile.md](16_Process_Environmental_Profile.md) gives stone paper's process thickness range as 0.1–0.4mm. A CaCO₃/HDPE composite at the ~80/18/2 mix runs roughly **2.0 g/cm³ density** (derived: CaCO₃ ≈2.7 g/cm³, HDPE ≈0.95 g/cm³, weighted by the mass ratio and back-converted through volume) — versus ordinary paper's ≈0.7–0.9 g/cm³ (porous cellulose fibre). The GSM-equivalent conversion used throughout this doc is:
+* **GSM is a paper-industry convention; stone paper is usually spec'd by thickness (mm/micron)** — a compounded mineral/polymer sheet, not a fibre mat. Process thickness range: 0.1–0.4mm ([16_Process_Environmental_Profile.md](16_Process_Environmental_Profile.md)). The ~80/18/2 CaCO₃/HDPE/additive mix runs ≈**2.0 g/cm³ density** (derived, mass-weighted) vs. ordinary paper's ≈0.7–0.9 g/cm³. Conversion used throughout:
 
   `GSM-equivalent = Thickness (mm) × 1000 × Density (g/cm³)`
 
-  **This is the single most important property difference in the whole catalog and it cuts against stone paper's cost story if you're not careful:** at matched *thickness* (matched stiffness/hand-feel — what actually matters to a converter or a notebook buyer), stone paper is **roughly 2.2–2.8x heavier per sheet** than wood-pulp paper of the same feel, because it's denser. Since your production cost is charged per tonne (per kg of material), a "same-feel" stone paper sheet costs meaningfully more in raw material than the ₹/tonne comparison in [03_Unit_Economics.md](03_Unit_Economics.md) §4.6 implies on its own — that doc compares tonne-for-tonne, not sheet-for-sheet-of-equivalent-stiffness. Both bases are shown below so you can see the gap.
+  **The single most important property difference in this catalog:** at matched *thickness* (matched stiffness/hand-feel — what actually matters to a buyer), stone paper is **≈2.2–2.8x heavier per sheet** than wood-pulp of the same feel, purely from density. So a "same-feel" sheet costs meaningfully more in raw material than a tonne-for-tonne comparison implies. Both bases are shown below.
 
-* **Commercial stone paper GSM conventions** (Karst, Rockstock, TBM/LIMEX-derived products, generic IndiaMART listings) typically market their stationery-grade sheet as "100–120gsm equivalent feel" while actually running 150–250 micron thick — i.e. genuinely heavier than the "100gsm" label implies by weight, but matched to it by *stiffness/opacity*. This is a general stone-paper-industry labelling convention, **not verified against this project's own future extrusion output** — get your own vendor's actual GSM/micron/density spec sheet once a line is commissioned, and treat every number below as the placeholder it is until then.
+* **Commercial stone paper GSM conventions** (Karst, Rockstock, TBM/LIMEX, generic IndiaMART) market stationery-grade sheet as "100–120gsm equivalent feel" while actually running 150–250 micron — heavier by weight than the label implies, matched by stiffness/opacity instead. General industry convention, **not verified against this project's own future extrusion output** — get a real vendor spec sheet once a line is commissioned; every number below is a placeholder until then.
 
-* **Printing process is a real, practical property difference — covered in §18.3** — before you quote a converter, confirm your sheet is compatible with their press.
+* **Printing compatibility is a real property difference — covered in §18.3.** Confirm sheet-press compatibility before quoting a converter.
 
 ---
 
 ## 18.0.2 Standard pricing rule — what we actually quote
 
-Every ₹ figure elsewhere in this document is a **substrate cost**: material at production cost, nothing else. It is not a price. Converting, printing, die-cutting, waste, freight, sales overhead and margin all sit on top of it, and quoting cost as price is how a plant runs at a loss while its spreadsheet says otherwise.
+Every ₹ figure elsewhere in this doc is a **substrate cost** — material at production cost, nothing else. Converting, printing, die-cutting, waste, freight and margin sit on top; quoting cost as price is how a plant runs at a loss while its spreadsheet says otherwise.
 
-The standard quoted price across the whole catalog is:
+Standard quoted price across the catalog:
 
 > **Price = cost + min(cost × 70%, ₹2.00)**
 
-Two halves, and the second is the important one:
+* **70%** is the working gross markup on substrate — absorbs conversion/waste/overhead and leaves margin on cheap, high-volume SKUs priced in paise.
+* **₹2.00 cap** stops the percentage running away on expensive SKUs. A premium carry bag costs ₹4.23 substrate; an unbounded 70% would push it to ₹7.19 against a ₹5.33 laminated incumbent — 1.35× the thing we're displacing. Capped, it lands at ₹6.23: a real premium, defensible on the property set, still a price a buyer can say yes to.
 
-* **The 70%** is the working gross markup on substrate — it absorbs conversion, waste and overhead, and leaves a margin, on the cheap high-volume SKUs where cost is measured in paise.
-* **The ₹2.00 cap** stops the percentage running away on the expensive SKUs. A premium carry bag costs ₹4.23 of substrate; an unbounded 70% would add ₹2.96 and push us to ₹7.19 against a ₹5.33 laminated incumbent — 1.35× the thing we are trying to displace. Capped, it lands at ₹6.23: a real premium over the incumbent, defensible on the property set, and still a price a buyer can say yes to.
-
-Below ≈₹2.86 of substrate the 70% binds; above it the ₹2.00 cap binds. That crossover is deliberate — it is roughly the line between the commodity SKUs, which are won on price, and the premium ones, which are won on property and have to *look* premium.
+Below ≈₹2.86 of substrate the 70% binds; above it the cap binds — roughly the line between commodity SKUs (won on price) and premium ones (won on property, priced to look premium).
 
 | SKU | Section | Substrate cost | Markup | **Our price** | Conventional incumbent |
 | :---- | :---- | ----: | ----: | ----: | :---- |
@@ -77,17 +75,17 @@ Below ≈₹2.86 of substrate the 70% binds; above it the ₹2.00 cap binds. Tha
 | Wallpaper, per m² | §18.6.5 | ₹8.40 | ₹2.00 *(capped)* | **₹10.40** | Retail category ₹250–1,320/m² |
 | Signage panel, 600×900mm | §18.5 | ₹10.58 | ₹2.00 *(capped)* | **₹12.58** | Correx/vinyl — not costed |
 
-**Three things this table is not.** It is not a rate card — a real quote moves with order size, print coverage, finishing and payment terms, and no buyer has yet been shown any of these numbers. It excludes converting on the SKUs where converting dominates: a finished premium bag needs rope handles, eyelets, a base card, printing and hand-gluing, which together cost several times the substrate, so ₹6.23 is what the *bag blank* is worth to us and not what a finished bag sells for (§18.9.2 walks through that gap). And it does not survive a move to wholesale-market input pricing — every figure here is production-cost basis, and at ₹60,000–108,000/t stone the comparison inverts, exactly as flagged in §18.0.
+**Three things this table is not.** Not a rate card — real quotes move with order size, print coverage, finishing and payment terms, and no buyer has seen these numbers yet. It excludes converting where converting dominates: a finished premium bag needs rope handles, eyelets, a base card, printing and hand-gluing costing several times the substrate, so ₹6.23 is the *bag blank's* worth, not a finished bag's sell price (§18.9.2). And it doesn't survive a move to wholesale-market input pricing — every figure is production-cost basis, and at ₹60,000–108,000/t stone the comparison inverts (§18.0).
 
-Notebooks (§18.2) are excluded on purpose: those are retail finished-goods prices already carrying two to five turns of converting and brand margin, not substrate, so this rule does not apply to them.
+Notebooks (§18.2) are excluded on purpose — retail finished-goods prices already carrying 2–5 turns of converting and brand margin, not substrate.
 
 ---
 
 ## 18.1 Raw Sheet & Roll Stock — Standard Sizes (ISO A-series, Letter/Legal)
 
-*See the Quick Visual Index above for a reference photo — sizes A0–A6 aren't visually distinguishable from one another in a photo (they're all "a blank sheet," just different dimensions), so this section isn't broken into a per-size image table the way the genuinely distinct product types below are.*
+*Sizes A0–A6 aren't visually distinguishable in a photo — no per-size image table here, unlike the genuinely distinct product types below.*
 
-The base substrate, before conversion into notebooks, packaging or labels. This is what [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.4.1 calls the "commodity raw-sheet" market — the one this plan should **not** compete in directly (Chinese FOB pricing sets a brutal floor), but it's the right place to start a catalog because every converted product below is built from it.
+The base substrate, before conversion into notebooks, packaging or labels. This is [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.4.1's "commodity raw-sheet" market — one this plan should **not** compete in directly (Chinese FOB pricing sets a brutal floor), but the right place to start since every converted product below is built from it.
 
 ### 18.1.1 Sizes and areas
 
@@ -117,11 +115,11 @@ The base substrate, before conversion into notebooks, packaging or labels. This 
 | Cost per ream (500 sheets), wholesale sell price | ₹115–140 | ₹563–1,013 | ₹150–270 |
 | Typical Indian retail ream price (general market reference, not project-sourced) | ₹250–350 | No direct market — stone paper isn't sold as loose copier reams; closest analogue is converted notebook pricing (§18.2) | — |
 
-**The honest read:** at matched thickness/stiffness — the only fair comparison, since a 5g "stone paper" sheet would be flimsier than the wood-pulp sheet it's supposedly replacing — stone paper's raw material costs **2–3x more per sheet** even at your own production cost, and **4–7x more** at wholesale market pricing. This is the sheet-level version of the finding already in [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.5: stone paper does not win a commodity cost fight. Loose A4 copier paper is not a SKU this plan should make.
+**The honest read:** at matched thickness/stiffness — the only fair comparison, since a 5g "stone paper" sheet would be flimsier than what it's replacing — stone paper's raw material costs **2–3x more per sheet** at production cost, **4–7x more** at wholesale pricing. Sheet-level version of [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.5: stone paper doesn't win a commodity cost fight. Loose A4 copier paper is not a SKU this plan should make.
 
 ### 18.1.3 A3/A5/A6 and Letter/Legal — scaled from the A4 base
 
-Same GSM assumptions as §18.1.2 (80 GSM wood-pulp writing paper; 150-micron/~300 GSM-equiv stone paper), scaled by area. Figures are production-cost basis (midpoint of the ranges above: ₹57,500/t wood, ₹28,000/t stone).
+Same GSM assumptions as §18.1.2, scaled by area, production-cost basis (midpoints: ₹57,500/t wood, ₹28,000/t stone).
 
 | Size | Area (m²) | Wood-pulp weight/sheet (g) | Wood-pulp cost/sheet (₹) | Stone paper weight/sheet (g) | Stone paper cost/sheet (₹) | Stone paper premium |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -141,7 +139,7 @@ Same GSM assumptions as §18.1.2 (80 GSM wood-pulp writing paper; 150-micron/~30
 
 ## 18.2 Notebooks & Stationery — Converted SKUs
 
-This is the segment [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7 ranks **#1 to lead with** — fastest revenue, no certification barrier, proven willingness-to-pay. Pricing here is **retail finished-goods pricing** already researched in §13.4.2, not derived from the substrate math above (converting, printing, binding and brand margin dominate the retail price at this stage of the value chain).
+[13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7 ranks this **#1 to lead with** — fastest revenue, no certification barrier, proven willingness-to-pay. Pricing here is **retail finished-goods pricing** (§13.4.2), not the substrate math above — converting, printing, binding and brand margin dominate at this stage of the value chain.
 
 | Image | SKU | Trim size | Page count | Stone paper retail price | Wood-pulp equivalent | Premium |
 | :---: | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -152,15 +150,15 @@ This is the segment [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry
 | <img src="images/skus/sheet-stock.png" width="130"> | Single loose sheet (India, IndiaMART) | 30×40" (~762×1016mm, ~0.774 m²) | 1 sheet | ₹25/sheet | Equivalent-area wood-pulp sheet at 80 GSM ≈ 62g ≈ ₹3.6–4.4 at production cost | ~6–7x |
 | <img src="images/skus/notebook-diary.png" width="130"> | Diary/planner (implied, not directly priced in project research) | A5 (148×210mm) | Dated diary format, ~300–380pg | Estimate ₹300–900 based on notebook-tier pricing above — **not a sourced figure, directional only** | Standard corporate diary, ₹100–300 | ~2–3x, unverified |
 
-*The Pro Series row reuses the hardcover product photo because Karst markets it as the same physical construction with a professional-grade cover finish, not a visually distinct format — the price difference is branding/positioning, not a different physical SKU.*
+*The Pro Series row reuses the hardcover photo — Karst markets it as the same physical construction with a premium cover finish, not a visually distinct format; the price difference is branding, not a different SKU.*
 
-**Sizing note for the converting line:** [17_Factory_Operations_Plan.md](17_Factory_Operations_Plan.md) §17.2.2 already budgets a converting/finishing line (₹6–12 lakh) sized to cut, stitch, fold and trim sheet into these formats — cover printing stays outsourced to a local printer at Stage 1.
+**Sizing note:** [17_Factory_Operations_Plan.md](17_Factory_Operations_Plan.md) §17.2.2 already budgets a converting/finishing line (₹6–12L) to cut, stitch, fold and trim sheet into these formats — cover printing stays outsourced at Stage 1.
 
 ---
 
 ## 18.3 Printing Compatibility — the property difference that determines who can even buy this
 
-**This is a real functional difference between the two substrates, not a cosmetic one — flag it to every prospective converter before they sample, so it doesn't surface as a surprise after an order.**
+**A real functional difference, not a cosmetic one — flag it to every prospective converter before they sample, so it isn't a post-order surprise.**
 
 | Printing method | Wood-pulp paper | Stone paper |
 | :---- | :---- | :---- |
@@ -171,13 +169,13 @@ This is the segment [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry
 | Screen printing | Works | Works — commonly used for stone-paper packaging/signage |
 | Embossing/foil stamping | Standard | Works, generally good result due to the sheet's density/stiffness |
 
-*This section is general stone-paper-industry knowledge (consistent across TBM/LIMEX, Karst, and generic Chinese-manufacturer spec sheets), **not yet verified against this specific plant's own formulation or extrusion vendor's output** — the same caveat [16_Process_Environmental_Profile.md](16_Process_Environmental_Profile.md) §16.6 already flags for compounding trials applies here: get a real print trial done with a target converter's actual press before quoting a print-ready spec. This belongs in the lab-certification step already in [09_B2B_Client_Acquisition.md](09_B2B_Client_Acquisition.md) §11.2 — procurement teams want tear-strength and water-resistance numbers, and a printer will independently want a proven print trial before committing a press run.*
+*General stone-paper-industry knowledge (TBM/LIMEX, Karst, generic Chinese spec sheets), **not yet verified against this plant's own formulation or vendor output** — same caveat as the compounding trials in [16_Process_Environmental_Profile.md](16_Process_Environmental_Profile.md) §16.6: get a real print trial on a target converter's actual press before quoting a print-ready spec. Belongs in the lab-certification step in [09_B2B_Client_Acquisition.md](09_B2B_Client_Acquisition.md) §11.2 — procurement wants tear-strength/water-resistance numbers, and a printer wants a proven print trial before committing a press run.*
 
 ---
 
 ## 18.4 Packaging — Cartons
 
-Pharma secondary packaging is [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7's **#2 priority segment** — buyers already pay for moisture resistance via water-based coatings; stone paper offers it natively.
+Pharma secondary packaging is [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7's **#2 priority** — buyers already pay for moisture resistance via water-based coatings; stone paper offers it natively.
 
 ### 18.4.1 Carton types and fit
 
@@ -190,7 +188,7 @@ Pharma secondary packaging is [13_Paper_Industry_Economics_Deep_Dive.md](13_Pape
 
 ### 18.4.2 Illustrative cost, per carton type
 
-*All figures use a representative 0.06 m² carton blank (roughly the flattened die-cut area of the "typical size" examples above, before trim waste) at each type's own mid-range GSM, production-cost basis (midpoints from §18.0: ₹57,500/t wood, ₹28,000/t stone). Rigid boxes are excluded — stone paper isn't a standalone substrate for that construction (§18.4.1), so a per-blank cost would be misleading.*
+*Representative 0.06 m² carton blank (flattened die-cut area, before trim waste) at each type's mid-range GSM, production-cost basis (₹57,500/t wood, ₹28,000/t stone). Rigid boxes excluded — stone paper isn't a standalone substrate for that construction (§18.4.1).*
 
 | Carton type | Representative GSM | Weight per blank | Wood-pulp cost/blank (production cost) | Stone paper cost/blank (production cost) | Note |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -200,15 +198,15 @@ Pharma secondary packaging is [13_Paper_Industry_Economics_Deep_Dive.md](13_Pape
 
 **What we quote:** see §18.0.2 — price = cost + min(cost × 70%, ₹2.00).
 
-*At matched weight (unlike §18.1.2's A4 case, cartons are conventionally spec'd by GSM already, so this is the fairer comparison for this category), stone paper's raw production cost runs genuinely cheaper across every fitting carton type — the pharma pitch holds structurally at the production-cost level. Wholesale market pricing tells a different story: at ₹60,000–108,000+/t stone paper vs. ₹32,500–55,000/t conventional board ([13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.4), the same blanks would cost roughly **1.1–3.3x more** (midpoint ~2x) at market sell price. Don't sell this as commodity raw board — sell the native moisture-resistance property that lets a buyer skip their own coating step, and price against the coating-inclusive conventional cost, not the bare-board cost.*
+*At matched weight (cartons are conventionally spec'd by GSM already, so this is the fairer comparison), stone paper's production cost runs genuinely cheaper across every fitting carton type — the pharma pitch holds structurally. Wholesale pricing tells a different story: at ₹60,000–108,000+/t stone vs. ₹32,500–55,000/t conventional board ([13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.4), the same blanks cost roughly **1.1–3.3x more** (midpoint ~2x) at market sell price. Don't sell this as commodity raw board — sell the native moisture-resistance that skips the buyer's coating step, priced against coating-inclusive conventional cost, not bare-board cost.*
 
 ---
 
 ## 18.5 Labels & Tags — the highest-margin segment identified
 
-[13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7 ranks this **#3**, but flags it as the segment with the **best margin-per-tonne** — waterproof/tear-resistant properties are the entire purchase criterion here, no compromise needed, and the competitive set is 100%-petroleum PVC/PP synthetic paper (Cosmo Films, Tirupati Marketing), not conventional paper at all.
+[13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7 ranks this **#3**, flagged as **best margin-per-tonne** — waterproof/tear-resistant is the entire purchase criterion, no compromise needed, and the competitive set is 100%-petroleum PVC/PP synthetic paper (Cosmo Films, Tirupati Marketing), not conventional paper.
 
-*No project-sourced ₹/unit pricing exists for this category — [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) flags it as a margin opportunity, not a costed SKU list. The stone-paper-side substrate costs below are derived with the same formula as every other section (§18.0), using each product's typical size at a representative GSM/thickness within its stated range — legitimate arithmetic on this project's own ₹/tonne figures. The conventional-incumbent side is a paper-vs-paper comparison where the incumbent is actually paper (hang tags, menus); where the real incumbent is a plastic (PVC ID cards, corflute signage), no project-sourced ₹/tonne figure exists for that material, so only the property-fit call is given, not a fabricated cost comparison.*
+*No project-sourced ₹/unit pricing exists here — §13.7 flags it as a margin opportunity, not a costed SKU list. Stone-paper substrate costs below use the same §18.0 formula on this project's own ₹/tonne figures. Where the real incumbent is plastic (PVC ID cards, corflute signage) with no project-sourced ₹/tonne figure, only the property-fit call is given, not a fabricated cost comparison.*
 
 | Image | SKU | Typical size | Typical stock | Wood-pulp cost/unit (production cost) | Stone paper cost/unit (production cost) | Conventional/incumbent material | Stone paper property match |
 | :---: | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -224,13 +222,13 @@ Pharma secondary packaging is [13_Paper_Industry_Economics_Deep_Dive.md](13_Pape
 
 ## 18.6 Wall Coverings — Wallpaper
 
-*Not covered in this project's existing research docs (03/13/16) — the market sizing, pricing and printing-process detail below is general home-décor/wallpaper-industry knowledge, not project-sourced. Treat every figure here as a starting hypothesis to verify with real Indian wallpaper distributors/printers, at the same rigor [03_Unit_Economics.md](03_Unit_Economics.md) applies to its own numbers.*
+*Not covered in existing research docs (03/13/16) — market sizing, pricing and printing-process detail below is general home-décor/wallpaper-industry knowledge, not project-sourced. Treat every figure as a hypothesis to verify with real Indian distributors/printers, same rigor [03_Unit_Economics.md](03_Unit_Economics.md) applies to its own numbers.*
 
 ### 18.6.1 Why this is worth a serious look
 
-* India's residential/commercial wallpaper market is a growing category (organized players: Asian Paints Nilaya, Marshalls Wallcoverings, Excel, D'decor) riding the same interior-décor/renovation boom driving tile, paint and flooring growth — no independently verified India market-size figure was found in this pass; get one before sizing a go/no-go decision the way [02_Market_Opportunity.md](02_Market_Opportunity.md) sizes the core stone-paper market.
-* Stone paper's core properties map onto a real, underserved wallpaper pain point: conventional non-woven/paper wallpaper struggles with mold and peeling in humid rooms (bathrooms, kitchens, monsoon-exposed walls) — exactly the climate India has, and exactly the property (waterproof, natively, no coating) [01_Core_Idea_Pitch_Summary.md](01_Core_Idea_Pitch_Summary.md) already leads with.
-* It sits alongside, not instead of, the labels/signage segment in §18.5 — same underlying pitch (waterproof/tear-resistant beats a coated/laminated conventional substrate), but a different converting line and a different buyer (interior contractors/distributors, not packaging converters).
+* India's residential/commercial wallpaper market is growing (Asian Paints Nilaya, Marshalls Wallcoverings, Excel, D'decor) riding the same interior-décor boom as tile/paint/flooring — no verified India market-size figure found in this pass; get one before sizing go/no-go, the way [02_Market_Opportunity.md](02_Market_Opportunity.md) sizes the core market.
+* Stone paper's properties map onto a real, underserved pain point: conventional non-woven/paper wallpaper struggles with mold/peeling in humid rooms — exactly India's climate, exactly the native waterproof property [01_Core_Idea_Pitch_Summary.md](01_Core_Idea_Pitch_Summary.md) leads with.
+* Sits alongside, not instead of, §18.5's labels/signage segment — same pitch (waterproof/tear-resistant beats coated/laminated substrate), different converting line and buyer (interior contractors/distributors, not packaging converters).
 
 ### 18.6.2 Wallpaper types and stone paper fit
 
@@ -244,7 +242,7 @@ Pharma secondary packaging is [13_Paper_Industry_Economics_Deep_Dive.md](13_Pape
 
 ### 18.6.3 Printing — the crucial factor
 
-This matters more here than for any other SKU in this catalog, because **wallpaper's entire commercial value is the printed pattern** — an off-spec print doesn't just look worse, it kills the product outright, unlike a plain packaging carton.
+Matters more here than any other SKU, because **wallpaper's entire commercial value is the printed pattern** — an off-spec print doesn't just look worse, it kills the product, unlike a plain packaging carton.
 
 | Printing method used in the wallpaper industry today | Ink/process | Works on stone paper? |
 | :---- | :---- | :---- |
@@ -252,15 +250,15 @@ This matters more here than for any other SKU in this catalog, because **wallpap
 | Rotary screen printing | Thicker ink, often water-based, deposited rather than absorbed | Partial fit — screen printing already works reasonably on stone paper per §18.3; feasible for large flat-colour pattern runs, less so for fine photographic-quality repeats |
 | Digital/large-format inkjet (UV-curable or latex) — the fast-growing **custom/on-demand wallpaper segment** | UV-cured or latex ink, cured/dried on the surface rather than absorbed | **Good fit** — this is the one wallpaper-printing method already ink-chemistry-compatible with stone paper (§18.3 already flags UV-curable ink as stone paper's native printing route). Custom/on-demand wallpaper (print-to-order by room dimensions, custom photo/pattern uploads) is exactly where digital UV/latex presses already dominate, for reasons unrelated to stone paper — the alignment is a genuine strategic opening, not a coincidence to force |
 
-**The practical conclusion:** don't chase mass-market gravure-printed wallpaper (the volume segment) — the ink-chemistry mismatch is a real production blocker, not a quality nice-to-have. **Do** look seriously at the custom/on-demand digital wallpaper niche, where UV/latex large-format printing is already the standard process regardless of substrate — stone paper slots into an existing, compatible print workflow there instead of requiring one to be built.
+**The practical conclusion:** don't chase mass-market gravure-printed wallpaper (the volume segment) — the ink-chemistry mismatch is a real production blocker. **Do** look at the custom/on-demand digital wallpaper niche, where UV/latex large-format printing is already the standard process regardless of substrate — stone paper slots into an existing compatible workflow there.
 
 ### 18.6.4 Installation — a second real gap, adjacent to the printing one
 
-Wallpaper doesn't just get printed, it gets pasted (or peeled-and-stuck) onto a wall — a step packaging/labels/notebooks don't have to solve. Conventional non-woven wallpaper relies on a porous backing so wallpaper paste can grip it; stone paper's dense, non-porous composite has the same absorption problem on its back side that it has on its printable face (§18.3). **Peel-and-stick (self-adhesive) format sidesteps this entirely** by using a factory-applied adhesive layer instead of wet paste — very likely the only commercially realistic installation format for a stone-paper wallpaper SKU, not an incidental choice. This also happens to be the fastest-growing wallpaper sub-category globally (rental-friendly, DIY-friendly), which works in this plan's favor — but it needs its own adhesive-lamination converting step this plan doesn't currently budget for anywhere, distinct from the extrusion/converting line in [17_Factory_Operations_Plan.md](17_Factory_Operations_Plan.md) §17.2.2, which cuts/stitches/folds/trims, not laminates adhesive backing.
+Wallpaper gets pasted (or peeled-and-stuck) onto a wall — a step packaging/labels/notebooks don't have to solve. Conventional non-woven wallpaper relies on a porous backing to grip paste; stone paper's dense, non-porous composite has the same absorption problem on its back as on its printable face (§18.3). **Peel-and-stick (self-adhesive) sidesteps this entirely** via a factory-applied adhesive layer — very likely the only commercially realistic installation format here, not incidental. Also the fastest-growing wallpaper sub-category globally (rental/DIY-friendly) — but needs its own adhesive-lamination converting step, not currently budgeted anywhere, distinct from the cut/stitch/fold/trim line in [17_Factory_Operations_Plan.md](17_Factory_Operations_Plan.md) §17.2.2.
 
 ### 18.6.5 Illustrative pricing comparison
 
-*India retail wallpaper pricing below is general market knowledge (organized-brand and budget-import price ranges commonly seen in the Indian home-décor retail market), **not sourced from this project's own research** — verify directly with distributors (Marshalls, Nilaya-stockists, or local wallpaper wholesalers) before underwriting any plan around it. Standard roll size used: 0.53m × 10m ≈ 5.3 m² per roll.*
+*India retail wallpaper pricing is general market knowledge, **not sourced from this project's own research** — verify with distributors (Marshalls, Nilaya-stockists, local wholesalers) before underwriting any plan around it. Standard roll size: 0.53m × 10m ≈ 5.3 m².*
 
 | Product | Price per roll (~5.3 m²) | Price per m² | Notes |
 | :---- | :---- | :---- | :---- |
@@ -286,16 +284,18 @@ Wallpaper doesn't just get printed, it gets pasted (or peeled-and-stuck) onto a 
 
 ## 18.7 Food Packaging (Grease-Resistant) — deprioritized, included for completeness
 
-[13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7 ranks this **#6, deprioritize initially** — established cellulose-based grease-resistant players already hold proven FSSAI food-contact certification, a harder entry than the segments above.
+[13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7 ranks this **#6, deprioritize initially** — established cellulose-based grease-resistant players hold proven FSSAI food-contact certification, a harder entry than the segments above.
+
+*Revised 31 August 2026: this segment was on the founder's near-term priority list. [07_Capital_Plan.md](07_Capital_Plan.md) §9.2.1 and [17_Factory_Operations_Plan.md](17_Factory_Operations_Plan.md) §17.2.2 hold the line: no dedicated capex at Stage 1, but sample pieces trial-run on the core converting line's existing output (same die-cutting/trimming as tags and menus) to test material fit and gauge interest ahead of FSSAI clearance — a cheap way to start the conversation without buying equipment against an unresolved certification gate.*
 
 | Image | SKU | Typical size | Conventional material/GSM | Wood-pulp cost/unit (production cost) | Stone paper cost/unit (production cost) | Stone paper consideration |
 | :---: | :---- | :---- | :---- | :---- | :---- | :---- |
 | <img src="images/skus/food-packaging.png" width="130"> | Bakery box liners | ~200×300mm liner sheet (0.06 m²) | Glassine/greaseproof paper, 30–50 GSM | ₹0.14 (at 40 GSM mid-range) | ₹0.07 | Native grease/moisture resistance is a genuine fit, but **FSSAI food-contact certification for the HDPE component is an unverified gate** — confirm before any direct food-contact pitch, per [09_B2B_Client_Acquisition.md](09_B2B_Client_Acquisition.md) segment note |
 | <img src="images/skus/food-qsr-wrap.png" width="130"> | QSR wraps | ~250×250mm wrap sheet (0.0625 m²) | Greaseproof paper, 30–40 GSM | ₹0.13 (at 35 GSM mid-range) | ₹0.06 | Same certification gate applies |
 
-*Both cost columns use general wood-pulp production-cost figures ([03_Unit_Economics.md](03_Unit_Economics.md) §4.6.1), not a glassine-specific sourced price — glassine/greaseproof paper likely prices somewhat differently from generic writing/printing paper, but no project-sourced figure exists for it specifically. Treat these as directional, same as every other derived cost in this doc.*
+*Both cost columns use general wood-pulp production-cost figures ([03_Unit_Economics.md](03_Unit_Economics.md) §4.6.1), not a glassine-specific price — no project-sourced figure exists for glassine specifically. Directional, same as every other derived cost in this doc.*
 
-**Recommended sequencing:** revisit as a non-direct-food-contact application (e.g., outer bakery box, not inner wrap) once production quality and certifications are proven in the higher-priority segments above.
+**Recommended sequencing:** revisit as a non-direct-food-contact application (e.g., outer bakery box, not inner wrap) once quality and certifications are proven in the higher-priority segments above.
 
 **What we quote:** see §18.0.2 — price = cost + min(cost × 70%, ₹2.00).
 
@@ -303,7 +303,7 @@ Wallpaper doesn't just get printed, it gets pasted (or peeled-and-stuck) onto a 
 
 ## 18.8 E-commerce Mailers/Labels — large market, approach selectively
 
-[13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7 ranks this **#4** — deprioritized versus the original plan because poly mailers cost ₹1.30–6/piece and are structurally 30–50% cheaper than any paper alternative at marketplace scale. Not a volume play; approach premium D2C brands wanting an "unboxing" sustainability story, not Amazon/Flipkart/Meesho RFPs directly.
+[13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.7 ranks this **#4** — deprioritized because poly mailers cost ₹1.30–6/piece, structurally 30–50% cheaper than any paper alternative at marketplace scale. Not a volume play; approach premium D2C brands wanting an "unboxing" sustainability story, not Amazon/Flipkart/Meesho RFPs directly.
 
 | Image | SKU | Typical size | Conventional material | Wood-pulp cost/unit (production cost) | Stone paper cost/unit (production cost) | Stone paper positioning |
 | :---: | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -316,23 +316,23 @@ Wallpaper doesn't just get printed, it gets pasted (or peeled-and-stuck) onto a 
 
 ## 18.9 Premium Retail Packaging — Carry Bags & Rigid Boxes
 
-*Not covered in this project's existing research docs (03/13/16) — added 30 August 2026 as an **expansion-horizon** category. The substrate arithmetic below uses the same §18.0 formula and the same project ₹/tonne inputs as every other section, so the cost figures are as sound as anything else here. The **market positioning is a hypothesis, not research**: no Indian premium-packaging buyer has been interviewed, no converter has quoted, and no sample exists. Treat §18.9.2–18.9.3 as a costed option to take to a buyer, not a segment this plan has validated.*
+*Not covered in existing research docs (03/13/16) — added 30 August 2026 as an **expansion-horizon** category. The substrate arithmetic uses the same §18.0 formula and project ₹/tonne inputs as every other section, so the cost figures are as sound as the rest. The **market positioning is a hypothesis, not research**: no Indian premium-packaging buyer interviewed, no converter quote, no sample. Treat §18.9.2–18.9.3 as a costed option to take to a buyer, not a validated segment.*
 
 ### 18.9.1 Why this category is worth costing
 
-Everything in §18.4–18.8 is a **volume** argument: thin margins, big runs, price-sensitive converters. This section is the opposite end — low volume, high ticket, and a buyer choosing on brand and feel rather than on ₹/blank. It's included because it answers a fair investor question the rest of the catalog doesn't: *where does this material go once the commodity SKUs are running?*
+§18.4–18.8 are all a **volume** argument: thin margins, big runs, price-sensitive converters. This section is the opposite — low volume, high ticket, a buyer choosing on brand and feel, not ₹/blank. It answers a fair investor question the rest of the catalog doesn't: *where does this material go once the commodity SKUs are running?*
 
-Three reasons it is not merely aspirational:
+Three reasons it's not merely aspirational:
 
-* **The honest incumbent is laminated paper, not paper.** Every premium bag and rigid box is matte- or gloss-laminated — a BOPP plastic film bonded to paper. Two materials, an extra process step, and a composite that no Indian recycling stream separates. Our one-material sheet delivers the same wipe-clean durability and hand-feel. This is the identical argument §18.5 already makes for menus/placemats, applied to a higher-value product.
+* **The honest incumbent is laminated paper, not paper.** Every premium bag/rigid box is matte- or gloss-laminated — BOPP plastic film bonded to paper, two materials plus an extra process step, a composite no Indian recycling stream separates. Our one-material sheet delivers the same wipe-clean durability and feel — the identical argument §18.5 makes for menus/placemats, at a higher value point.
 * **Handle tear-out is the #1 failure mode of premium carry bags** — the rope-handle punch point. Tear resistance is stone paper's strongest single property ([01_Core_Idea_Pitch_Summary.md](01_Core_Idea_Pitch_Summary.md) §2).
-* **Monsoon.** A bag carrying ₹2 lakh of jewellery that fails in rain is a brand incident, not a packaging complaint. Native waterproofing is worth more here than in any commodity SKU in this catalog.
+* **Monsoon.** A bag carrying ₹2 lakh of jewellery that fails in rain is a brand incident. Native waterproofing is worth more here than in any commodity SKU.
 
-> **⚠ Do not market this category as "biodegradable."** At the standard 80/18/2 formulation the sheet contains ~18% HDPE and fails EN 13432, ASTM D6400 and TÜV OK Compost ([16_Process_Environmental_Profile.md](16_Process_Environmental_Profile.md) §16.4, and the property table in §18.10 below). Premium-brand sustainability teams are precisely the buyers who audit this claim. The defensible claims are *tree-free, water-free process, marble-waste diverted, and a lower plastic fraction than the BOPP-laminated paper it replaces.* A genuine compostable claim requires the PBAT variant **plus** EN 13432 certification on the finished article — a funded 6–12 month work item, not a line on a datasheet.
+> **⚠ Do not market this category as "biodegradable."** At the standard 80/18/2 formulation the sheet is ~18% HDPE and fails EN 13432, ASTM D6400 and TÜV OK Compost ([16_Process_Environmental_Profile.md](16_Process_Environmental_Profile.md) §16.4, §18.10 below). Premium-brand sustainability teams are exactly the buyers who audit this claim. Defensible claims: *tree-free, water-free process, marble-waste diverted, lower plastic fraction than the BOPP-laminated paper it replaces.* A genuine compostable claim needs the PBAT variant **plus** EN 13432 certification on the finished article — a funded 6–12 month item, not a datasheet line.
 
 ### 18.9.2 Carry bags — sizes, areas and cost
 
-*Blank area is the flattened die-cut: body tube (perimeter × height, plus a 40mm top turnover) + bottom panel with a 40% uplift for the four bottom flaps + a 20mm side glue flap. Stone paper is spec'd at **0.24mm (~480 GSM-equivalent at 2.0 g/cm³)** to match the caliper — and therefore the stiffness and hand — of the 250 GSM coated art paper these bags are conventionally made from. Per §18.1.2 this matched-thickness basis is the only fair one. Production-cost basis throughout: ₹28,000/t stone, ₹57,500/t wood-pulp, ₹150,000/t BOPP matte film (17 GSM at 0.91 g/cm³).*
+*Blank area is the flattened die-cut: body tube (perimeter × height + 40mm top turnover) + bottom panel (40% uplift for four bottom flaps) + 20mm side glue flap. Stone paper spec'd at **0.24mm (~480 GSM-equivalent at 2.0 g/cm³)** to match the caliper/stiffness of the 250 GSM coated art paper these bags conventionally use — per §18.1.2 the only fair basis. Production-cost basis: ₹28,000/t stone, ₹57,500/t wood-pulp, ₹150,000/t BOPP matte film (17 GSM at 0.91 g/cm³).*
 
 | Image | SKU | Dimensions (W×H×D) | Blank area | Stone paper cost/bag | 250 GSM art + BOPP lamination | Verdict |
 | :---: | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -342,17 +342,17 @@ Three reasons it is not merely aspirational:
 
 **What we quote:** see §18.0.2 — price = cost + min(cost × 70%, ₹2.00).
 
-**The read:** stone paper lands **roughly 20% below** the laminated incumbent on substrate at production cost, *and* removes the lamination step from the converter's process. Note carefully what is excluded on both sides: rope handles, eyelets, base insert card, printing, die-cutting, gluing and hand-finishing. On a finished premium bag those dominate — a converted bag retails at ₹12–40 (standard) to ₹60–200 (bridal/luxury), so substrate is well under a fifth of the sell price. **This is not a category won on substrate cost. Cost parity is the ticket to entry; the property set and the single-material story are the sale.**
+**The read:** stone paper lands **roughly 20% below** the laminated incumbent on substrate at production cost, *and* removes the lamination step from the converter's process. Excluded on both sides: rope handles, eyelets, base insert card, printing, die-cutting, gluing and hand-finishing — those dominate a finished bag, which retails at ₹12–40 (standard) to ₹60–200 (bridal/luxury), so substrate is well under a fifth of sell price. **Not a category won on substrate cost. Cost parity is the ticket to entry; the property set and single-material story are the sale.**
 
-At *wholesale market* pricing (₹60,000–108,000/t stone vs ₹45,000–70,000/t premium coated art, [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.4) the comparison inverts to roughly 2–3× more expensive, exactly as it does everywhere else in this catalog. Sell the property, price against the lamination-inclusive conventional cost.
+At *wholesale market* pricing (₹60,000–108,000/t stone vs ₹45,000–70,000/t premium coated art, [13_Paper_Industry_Economics_Deep_Dive.md](13_Paper_Industry_Economics_Deep_Dive.md) §13.4) the comparison inverts to roughly 2–3× more expensive, as everywhere else in this catalog. Sell the property, price against lamination-inclusive conventional cost.
 
 ### 18.9.3 Rigid / set-up boxes — what we can actually supply
 
-§18.4.1 rules out rigid boxes as a **standalone substrate**, and that ruling stands: bending stiffness scales with the cube of caliper, so a 1.5mm greyboard core against our 0.4mm ceiling is ~53× on that term alone, and stone paper's modulus does not begin to close it. **We cannot be the structure of a rigid box.**
+§18.4.1 rules out rigid boxes as a **standalone substrate**, and that stands: bending stiffness scales with the cube of caliper, so a 1.5mm greyboard core against our 0.4mm ceiling is ~53× on that term alone, and stone paper's modulus doesn't close it. **We cannot be the structure of a rigid box.**
 
-But a rigid box is not one material. It is a greyboard core **wrapped** in a thin printed decorative sheet, with a second sheet lining the inside — and that wrap is 120–157 GSM art paper, well inside what this line makes. At our 0.1mm process floor (~200 GSM-equivalent) our sheet is *thinner* than a 157 GSM art wrap (~0.15mm), so it turns corners and edge-tucks more cleanly, not less. Stone paper creases without cracking — the exact property that disqualifies us from corrugated fluting (§18.4.1) is an asset on a box turn-in.
+But a rigid box isn't one material — it's a greyboard core **wrapped** in a thin printed decorative sheet, with a second sheet lining the inside, and that wrap is 120–157 GSM art paper, well inside what this line makes. At our 0.1mm process floor (~200 GSM-equivalent) our sheet is *thinner* than a 157 GSM art wrap (~0.15mm), so it turns corners and edge-tucks more cleanly, not less. Stone paper creases without cracking — the exact property that disqualifies us from corrugated fluting (§18.4.1) is an asset on a box turn-in.
 
-*Worked on a 200×150×50mm two-piece box (base + shallow lid): greyboard core area 0.113 m²; decorative layer 0.264 m², being outer wrap plus inner liner including 15mm turn-ins. Greyboard costed at 1.5mm / 0.75 g/cm³ (~1,125 GSM) at ₹35,000/t — a general Indian recycled-greyboard market reference, **not a project-sourced figure**.*
+*Worked on a 200×150×50mm two-piece box (base + shallow lid): greyboard core area 0.113 m²; decorative layer 0.264 m² (outer wrap + inner liner incl. 15mm turn-ins). Greyboard costed at 1.5mm/0.75 g/cm³ (~1,125 GSM) at ₹35,000/t — general Indian recycled-greyboard market reference, **not a project-sourced figure**.*
 
 | Box component | Who supplies it | Stone paper build | Conventional build |
 | :---- | :---- | :---- | :---- |
@@ -360,23 +360,23 @@ But a rigid box is not one material. It is a greyboard core **wrapped** in a thi
 | Decorative wrap + liner | **This is our SKU** | **₹1.48** (0.1mm stone, no lamination) | ₹3.06 (157 GSM art ₹2.40 + BOPP film ₹0.66) |
 | **Full box, materials only** | | **₹5.91** | ₹7.49 |
 
-**The honest framing for an investor deck:** we supply **25% of the material value of a rigid box**, not the box. That quarter is the part the customer actually sees and touches, it is the part that carries the print and the finish, and we halve its cost while removing a lamination step. What we do *not* do is make a rigid box — the core is bought in and the wrapping operation belongs to a set-up box converter. Anyone presenting this as "Limepaper makes premium gift boxes" is overclaiming, and a technically literate investor will catch it.
+**The honest framing for an investor deck:** we supply **25% of the material value of a rigid box**, not the box. That quarter is the part the customer sees and touches, carries the print and finish, and we halve its cost while removing a lamination step. What we do *not* do is make a rigid box — the core is bought in, the wrapping belongs to a set-up box converter. "Limepaper makes premium gift boxes" is overclaiming, and a technically literate investor will catch it.
 
 **What we quote:** see §18.0.2 — price = cost + min(cost × 70%, ₹2.00).
 
 ### 18.9.4 The three trials that gate this whole category
 
-None of §18.9 is quotable to a customer until these are run. They are cheap, they are fast, and two of them share a rig:
+None of §18.9 is quotable to a customer until these are run — cheap, fast, two share a rig:
 
-1. **Glue adhesion.** Bag side-seams, bottom flaps and box wrap-to-greyboard are all glued. HDPE surface energy is ~31 dyn/cm; reliable adhesion needs ~38+. The fix is inline corona treatment or a specialty adhesive — routine in film converting, but unproven at our filler loading, and it is the classic failure at a converter's first trial. **This is the single highest-risk item in the section.**
-2. **Hot foil stamping.** The signature premium finish. §18.3 says foil "works, generally good result due to the sheet's density/stiffness" — but the same table flags HDPE softening at 120–130°C, and foil dies run 100–150°C. **Those two statements are in tension and this document should not pretend otherwise.** Run the trial; cold foil is the fallback if hot foil deforms the sheet.
-3. **Handle punch tear-out.** Expected to pass comfortably — this is our best property — but it is also the specific number a buyer will ask for, so have it measured rather than asserted.
+1. **Glue adhesion.** Bag side-seams, bottom flaps and box wrap-to-greyboard are all glued. HDPE surface energy is ~31 dyn/cm; reliable adhesion needs ~38+. Fix: inline corona treatment or a specialty adhesive — routine in film converting, but unproven at our filler loading, and the classic failure at a converter's first trial. **The single highest-risk item in this section.**
+2. **Hot foil stamping.** The signature premium finish. §18.3 says foil "works, generally good result due to the sheet's density/stiffness" — but the same table flags HDPE softening at 120–130°C, and foil dies run 100–150°C. **Those two statements are in tension.** Run the trial; cold foil is the fallback if hot foil deforms the sheet.
+3. **Handle punch tear-out.** Expected to pass comfortably — our best property — but the specific number a buyer will ask for, so measure it rather than assert it.
 
 ### 18.9.5 Verdict
 
-**Carry bags: a genuine Tier 1 candidate held back only by unrun trials.** They clear *fast to make* (we sell sheet to an existing bag converter, no new machine on our side), *mass market* (Indian premium retail is large and monsoon-exposed), *cheaper and better* (against the laminated incumbent), and *PBAT-ready*. The realistic buyer set is Indian premium retail — jewellery (Tanishq, Kalyan, Malabar tier), bridal and apparel, premium D2C beauty — **not** European luxury houses. LVMH and Kering buy finished bags through long-standing European converters on 18–36 month material-qualification cycles, and both are actively removing polymer from packaging; an 18% HDPE sheet is pointed against their roadmap, and we have no production run, no spec sheet, no certification and no reference customer to open that conversation with.
+**Carry bags: a genuine Tier 1 candidate held back only by unrun trials.** Clears *fast to make* (sell sheet to an existing bag converter, no new machine on our side), *mass market* (Indian premium retail is large and monsoon-exposed), *cheaper and better* than the laminated incumbent, and *PBAT-ready*. Realistic buyer set: Indian premium retail — jewellery (Tanishq/Kalyan/Malabar tier), bridal, apparel, premium D2C beauty — **not** European luxury houses. LVMH and Kering buy through long-standing European converters on 18–36 month qualification cycles and are actively removing polymer from packaging; an 18% HDPE sheet points against their roadmap, and we have no production run, spec sheet, certification or reference customer to open that conversation with.
 
-**Rigid boxes: a real but partial SKU, correctly scoped as the decorative layer.** Worth carrying in the catalog precisely because it converts a flat "ruled out" into "ruled out as structure, viable as the visible surface" — which is the more accurate and more useful answer. Same caution on named brands: Apple has spent a decade publicly driving toward plastic-free fibre packaging and Samsung runs comparable Eco-Package commitments, so neither is a credible early target for a polymer-bearing sheet.
+**Rigid boxes: a real but partial SKU, correctly scoped as the decorative layer.** Worth carrying because it converts a flat "ruled out" into "ruled out as structure, viable as the visible surface" — more accurate and more useful. Same caution on named brands: Apple has spent a decade driving toward plastic-free fibre packaging and Samsung runs comparable Eco-Package commitments — neither is a credible early target for a polymer-bearing sheet.
 
 ---
 
@@ -431,4 +431,4 @@ None of §18.9 is quotable to a customer until these are run. They are cheap, th
 * How to actually land the first B2B orders in the priority sectors above → [09_B2B_Client_Acquisition.md](09_B2B_Client_Acquisition.md)
 
 ---
-*Sources listed centrally in [10_Sources.md](10_Sources.md). Per-sheet/per-unit costs in this document are derived arithmetic (GSM × area × price-per-tonne), not vendor quotations — get real converter/press quotes at each SKU's actual spec before pricing any customer proposal.*
+*Sources listed centrally in [10_Sources.md](10_Sources.md). Per-sheet/per-unit costs here are derived arithmetic (GSM × area × price-per-tonne), not vendor quotations — get real converter/press quotes at each SKU's actual spec before pricing any customer proposal.*
