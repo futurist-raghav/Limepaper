@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Limepaper — Investor & Lender Deck</title>
+<style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #2C333B; background: #FAF7F2; }
+  :root {
+    --ink: #2C333B;
+    --paper: #FAF7F2;
+    --marble: #E4DCC9;
+    --marble-dark: #CFC4A8;
+    --rust: #B5623A;
+    --slate: #5B6470;
+    --line: #D8D0C0;
+  }
+  .slide {
+    width: 1280px; height: 720px;
+    page-break-after: always;
+    position: relative;
+    padding: 64px 80px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide:last-child { page-break-after: auto; }
+  .kicker { color: var(--rust); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: 15px; margin-bottom: 10px; }
+  h1 { font-size: 44px; font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; }
+  h2 { font-size: 34px; font-weight: 700; margin-bottom: 28px; letter-spacing: -0.01em; }
+  h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+  p, li { font-size: 18px; line-height: 1.5; color: var(--ink); }
+  .sub { font-size: 20px; color: var(--slate); margin-top: 14px; max-width: 780px; }
+  .slide-num { position: absolute; bottom: 28px; right: 80px; font-size: 13px; color: var(--slate); }
+  .brand { position: absolute; bottom: 28px; left: 80px; font-size: 13px; color: var(--slate); font-weight: 600; letter-spacing: .04em; }
+  .content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 26px 28px; }
+  .card h3 { color: var(--rust); }
+  ul { list-style: none; }
+  ul li { position: relative; padding-left: 22px; margin-bottom: 10px; }
+  ul li::before { content: "—"; position: absolute; left: 0; color: var(--rust); font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; font-size: 17px; }
+  th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  th { color: var(--slate); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+  .pill { display: inline-block; background: var(--marble); color: var(--ink); font-size: 13px; font-weight: 700; padding: 5px 14px; border-radius: 999px; margin-right: 8px; }
+  .title-slide { justify-content: center; align-items: flex-start; background: linear-gradient(135deg, #FAF7F2 60%, var(--marble) 100%); }
+  .title-slide h1 { font-size: 64px; }
+  .tag { font-size: 24px; color: var(--slate); margin-top: 18px; max-width: 700px; }
+  .stat { text-align: center; }
+  .stat .num { font-size: 46px; font-weight: 800; color: var(--rust); line-height: 1; }
+  .stat .lbl { font-size: 15px; color: var(--slate); margin-top: 8px; }
+  .imgrow { display: flex; gap: 20px; }
+  .imgcard { flex: 1; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 14px; text-align: center; }
+  .imgcard img { width: 100%; height: 130px; object-fit: contain; }
+  .imgcard .cap { font-size: 14px; font-weight: 600; margin-top: 8px; color: var(--ink); }
+  .warn { background: #FFF6EC; border: 1px solid #E9C9A0; border-radius: 10px; padding: 18px 22px; }
+  .warn h3 { color: var(--rust); margin-bottom: 6px; }
+  .process { display: flex; align-items: center; justify-content: space-between; }
+  .pstep { flex: 1; text-align: center; }
+  .pstep .n { width: 44px; height: 44px; border-radius: 50%; background: var(--rust); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 18px; }
+  .parrow { font-size: 24px; color: var(--marble-dark); padding: 0 6px; }
+</style>
+</head>
+<body>
+
+<!-- 1: Title -->
+<section class="slide title-slide">
+  <div class="kicker">Investor & Lender Deck — September 2026</div>
+  <h1>Limepaper</h1>
+  <p class="tag">Tree-free, water-free "stone paper" made from Rajasthan's marble waste — a packaging and stationery substrate for a market moving away from wood pulp and single-use plastic.</p>
+  <div style="margin-top:36px; display:flex; gap:12px;">
+    <span class="pill">Kishangarh / Rajsamand, Rajasthan</span>
+    <span class="pill">Manufacturing — Stone Paper</span>
+    <span class="pill">Pre-plant / Pre-revenue</span>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">1</div>
+</section>
+
+<!-- 2: The problem -->
+<section class="slide">
+  <div class="kicker">The Problem</div>
+  <h2>Two problems that solve each other</h2>
+  <div class="content grid2">
+    <div class="card">
+      <h3>Packaging buyers need an alternative</h3>
+      <ul>
+        <li>India's single-use-plastic restrictions and FMCG ESG mandates are pushing procurement toward substitutes</li>
+        <li>Wood-pulp paper carries ~200 tonnes of water and ~2,900 kWh of energy per tonne — a real cost and ESG liability</li>
+        <li>Wood prices have risen ~88% recently; India pays a premium vs. international buyers</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Rajasthan has a waste crisis, not a resource</h3>
+      <ul>
+        <li>Kishangarh's marble-slurry dumping yard takes a truck roughly every 10 minutes at peak</li>
+        <li>CPCB and NGT have flagged groundwater and soil contamination from this slurry</li>
+        <li>Processors actively want offtake — feedstock is a liability looking for a buyer, not a scarce input</li>
+      </ul>
+    </div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">2</div>
+</section>
+
+<!-- 3: The product / process -->
+<section class="slide">
+  <div class="kicker">The Product</div>
+  <h2>Stone paper, made near the mine mouth</h2>
+  <div class="content">
+    <p style="margin-bottom: 28px;">≈80% ground limestone/marble waste (CaCO₃) + ≈18% HDPE + ≈2% additives — compounded and extruded into sheet, no water, no bleach, no pulping.</p>
+    <div class="process">
+      <div class="pstep"><div class="n">1</div><p style="font-size:15px;">Crush & grind marble waste to 6–10 micron powder</p></div>
+      <div class="parrow">→</div>
+      <div class="pstep"><div class="n">2</div><p style="font-size:15px;">Compound with HDPE + additives at 160–180°C</p></div>
+      <div class="parrow">→</div>
+      <div class="pstep"><div class="n">3</div><p style="font-size:15px;">Extrude & calender into 0.1–0.4mm sheet</p></div>
+      <div class="parrow">→</div>
+      <div class="pstep"><div class="n">4</div><p style="font-size:15px;">Cut & convert into packaging or stationery</p></div>
+    </div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">3</div>
+</section>
+
+<!-- 4: Market -->
+<section class="slide">
+  <div class="kicker">Market Opportunity</div>
+  <h2>A small, fast-growing category with a thin field</h2>
+  <div class="content">
+    <div class="grid3" style="margin-bottom:32px;">
+      <div class="stat"><div class="num">$1.06bn → $1.34bn</div><div class="lbl">Global stone paper, 2026→2031 (4.9% CAGR)</div></div>
+      <div class="stat"><div class="num">$58.7m → $122.9m</div><div class="lbl">India stone paper, 2024→2033 (8.8% CAGR — fastest in APAC)</div></div>
+      <div class="stat"><div class="num">1</div><div class="lbl">Branded India competitor (Ston2pack) — dormant since 2022–23</div></div>
+    </div>
+    <p class="sub">Packaging is the largest global demand segment (37.9% share); industrial labels & tags is the fastest-growing use case (7.6% CAGR); India's self-adhesive/label segment is its fastest-growing sub-category.</p>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">4</div>
+</section>
+
+<!-- 5: Why us -->
+<section class="slide">
+  <div class="kicker">Why Rajasthan, Why This Team</div>
+  <h2>A captive position nobody else claims</h2>
+  <div class="content grid2">
+    <div class="card">
+      <h3>Vertically integrated from day one</h3>
+      <ul>
+        <li>In-house feedstock refining/micronizing — not buying pre-purified powder</li>
+        <li>In-house extrusion + calendering</li>
+        <li>In-house converting — notebooks, cartons on the same site</li>
+        <li>Most competitors buy in pre-made sheet or pre-purified powder — we don't</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>The team</h3>
+      <ul>
+        <li>Two founders, product/B2B sales/brand — digitally-native, energy-intensive execution</li>
+        <li>A senior family member running factory-floor operations and vendor/landlord relationships</li>
+        <li>~4 years of hands-on carton-industry experience (2022–present) — a real credibility asset</li>
+        <li>No large payroll, no outside equity spent yet — lean by construction, not by necessity</li>
+      </ul>
+    </div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">5</div>
+</section>
+
+<!-- 6: Unit economics -->
+<section class="slide">
+  <div class="kicker">Unit Economics</div>
+  <h2>Roughly half the material cost of wood-pulp paper</h2>
+  <div class="content">
+    <table>
+      <tr><th>Cost element (per tonne output)</th><th>Wood-pulp paper</th><th>Stone paper</th></tr>
+      <tr><td>Primary raw material</td><td>₹32,000–60,000</td><td>₹1,400–3,800</td></tr>
+      <tr><td>Binder / resin</td><td>Chemicals, ~5–10% of opex</td><td>₹16,900–21,800 (HDPE — largest single line)</td></tr>
+      <tr><td>Process water</td><td>~200 t/t + ETP burden</td><td>~0</td></tr>
+      <tr><td>Energy</td><td>~1,300–1,700 kWh/t electricity + steam</td><td>~700 kWh/t, no boiler stage</td></tr>
+      <tr><td><strong>Illustrative all-in (materials + energy)</strong></td><td><strong>≈ ₹42,000–73,000+</strong></td><td><strong>≈ ₹24,000–32,000</strong></td></tr>
+    </table>
+    <p class="sub">Counter-intuitive finding: cheap local limestone lowers the bill but doesn't dominate it — HDPE resin, a national petrochemical commodity, is the larger cost line. The Rajasthan edge is really feedstock security, near-zero logistics, and the ESG/circular-economy story.</p>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">6</div>
+</section>
+
+<!-- 7: Product line -->
+<section class="slide">
+  <div class="kicker">Two Revenue Channels, One Line</div>
+  <h2>Raw substrate + finished branded goods</h2>
+  <div class="content">
+    <div class="imgrow" style="margin-bottom:20px;">
+      <div class="imgcard"><img src="../docs/images/skus/sheet-stock.png"><div class="cap">Sheet / roll stock</div></div>
+      <div class="imgcard"><img src="../docs/images/skus/notebook.png"><div class="cap">Notebooks</div></div>
+      <div class="imgcard"><img src="../docs/images/skus/carton.png"><div class="cap">Cartons</div></div>
+      <div class="imgcard"><img src="../docs/images/skus/bag-carry-premium.png"><div class="cap">Carry bags</div></div>
+      <div class="imgcard"><img src="../docs/images/skus/label-tag.png"><div class="cap">Tags & labels</div></div>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>Channel 1 — Raw substrate</h3><p style="font-size:16px;">Wholesale sheet/roll to converters and brands. Thin per-unit margin, minimal conversion cost on our side. Primary Stage 1 plan, LOI-gated before equipment is ordered.</p></div>
+      <div class="card"><h3>Channel 2 — Finished goods</h3><p style="font-size:16px;">10 SKUs under our own name. We capture the converting margin; we bear the converting capex and own the brand and sales relationship.</p></div>
+    </div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">7</div>
+</section>
+
+<!-- 8: GTM -->
+<section class="slide">
+  <div class="kicker">Go-To-Market</div>
+  <h2>B2B first, sequenced by how these buyers actually behave</h2>
+  <div class="content">
+    <table>
+      <tr><th>Segment</th><th>Sequencing</th><th>Why</th></tr>
+      <tr><td>Corporate gifting</td><td>Year 1 — first revenue</td><td>Zero certification barrier, cash-flow bridge, not a moat</td></tr>
+      <tr><td>E-commerce mailers / cartons</td><td>Year 1</td><td>Direct fit for Channel 1 substrate sales</td></tr>
+      <tr><td>Industrial labels & tags</td><td>Year 1–2</td><td>Fastest-growing use case, high-margin, low-volume entry</td></tr>
+      <tr><td>FMCG packaging (ESG-driven)</td><td>Year 2, once track record exists</td><td>Requires technical qualification and reference accounts</td></tr>
+      <tr><td>Pharma</td><td>Year 3+</td><td>Multi-year vendor audit trail — not a year-one segment for a new vendor</td></tr>
+    </table>
+    <p class="sub">Pre-sell before commissioning: 3–5 signed LOIs or pilot POs required before equipment is ordered.</p>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">8</div>
+</section>
+
+<!-- 9: Risks, honestly -->
+<section class="slide">
+  <div class="kicker">Risks — Addressed Directly, Not Glossed Over</div>
+  <h2>What we're watching, and what we're doing about it</h2>
+  <div class="content grid2">
+    <div class="warn"><h3>Not "plastic-free"</h3><p style="font-size:16px;">~18% of the product is HDPE, which only photodegrades — not biodegrades. "Tree-free, water-free" is the defensible claim; "plastic-free" is not, and we say so upfront rather than let a buyer discover it.</p></div>
+    <div class="warn"><h3>GST/HSN classification is open</h3><p style="font-size:16px;">Could be taxed as "plastic sheet" rather than "paper" — a material swing in margin. An advance ruling is a pre-condition before capital moves, not an afterthought.</p></div>
+    <div class="warn"><h3>The one India precedent went dormant</h3><p style="font-size:16px;">Ston2pack, the only branded India stone-paper player, has been quiet since 2022–23 under arguably better conditions than today. Diligence on why is our first task, before any other capital is spent.</p></div>
+    <div class="warn"><h3>Capital precedes revenue</h3><p style="font-size:16px;">Stage 1 capex is drawn before the plant sells anything. We've built hard gates — signed LOIs, vendor quotes, a debt-service model at 30/50/70% utilisation — before equipment is ordered.</p></div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">9</div>
+</section>
+
+<!-- 10: Capital plan -->
+<section class="slide">
+  <div class="kicker">Capital Plan</div>
+  <h2>Stage 1 is debt-financed — we are not raising equity right now</h2>
+  <div class="content">
+    <div class="grid2" style="margin-bottom: 24px;">
+      <div class="card">
+        <h3>Stage 1 — ₹1.5cr, bootstrapped</h3>
+        <ul>
+          <li>Collateral-backed term debt: ₹70L family shop (clear title) + ₹10L silver</li>
+          <li>CGTMSE-guaranteed, no external equity</li>
+          <li>Hard ceiling — no new borrowing until ≥50% repaid from operations</li>
+          <li>Two ring-fenced reserves: ₹10L salary buffer, ₹8L emergency</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Stage 2 — ₹15cr for 10% equity</h3>
+        <ul>
+          <li>Gated, not scheduled: 12+ months of real Stage 1 operating data</li>
+          <li>3–5 anchor B2B accounts with repeat purchases, not LOIs</li>
+          <li>Debt serviced on schedule; GST/HSN resolved</li>
+          <li>Sized against India's ₹17.2cr published 5 TPD turnkey benchmark</li>
+        </ul>
+      </div>
+    </div>
+    <p class="sub">We evaluated an Antler India pre-seed application and declined it as currently scoped — see next slide.</p>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">10</div>
+</section>
+
+<!-- 11: Where we stand on fundraising -->
+<section class="slide">
+  <div class="kicker">Where We Stand On Fundraising</div>
+  <h2>We looked at pre-seed equity, and said not yet</h2>
+  <div class="content">
+    <p style="margin-bottom:22px; font-size:19px;">We ran a structured, adversarial review of an Antler India pre-seed application (~₹2–4cr for 9–11% equity) against our debt-financed Stage 1 plan. The finding: applying now would price the company at a valuation it hasn't earned yet, and convert a recoverable asset risk into permanent equity dilution and governance obligations — before our own governance structure is even finalized.</p>
+    <div class="grid2">
+      <div class="card"><h3>What we're doing instead</h3><p style="font-size:16px;">Confirming whether CGTMSE's own collateral-substitution mechanics can reduce our shop-pledge exposure — the actual problem outside equity would need to solve.</p></div>
+      <div class="card"><h3>When this changes</h3><p style="font-size:16px;">A manufacturing-focused investor at a valuation grounded in comparable deals, or Stage 2's own gates being met on schedule, both reopen this conversation on our terms, not a program's.</p></div>
+    </div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">11</div>
+</section>
+
+<!-- 12: Roadmap -->
+<section class="slide">
+  <div class="kicker">18-Month Roadmap</div>
+  <h2>What happens, and when</h2>
+  <div class="content">
+    <table>
+      <tr><th>Months</th><th>Milestone</th></tr>
+      <tr><td>0–2</td><td>Diligence gates closed: competitor diligence, vendor quotes (incl. leasing terms), signed LOIs, GST/HSN ruling, bank shop valuation</td></tr>
+      <tr><td>2–4</td><td>Loan sanctioned, entity incorporated, PCB Consent to Establish, existing small loans closed</td></tr>
+      <tr><td>4–10</td><td>Feedstock refining + extrusion line installed; core converting line commissioned</td></tr>
+      <tr><td>10–12</td><td>First commercial production; conditional paper bag line if glue trial clears</td></tr>
+      <tr><td>12–18</td><td>Line running at increasing utilisation; repeat-order data tracked; debt service from operations begins</td></tr>
+    </table>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">12</div>
+</section>
+
+<!-- 13: Ask -->
+<section class="slide title-slide">
+  <div class="kicker">The Ask</div>
+  <h1 style="font-size:48px;">What we need from this conversation</h1>
+  <div class="content" style="margin-top:20px;">
+    <div class="grid2">
+      <div class="card"><h3>If you're a lender</h3><p style="font-size:17px;">Sanction the Stage 1 term loan against the documented collateral package — ₹70L shop, ₹10L silver, CGTMSE guarantee — once our six pre-conditions close.</p></div>
+      <div class="card"><h3>If you're a future investor</h3><p style="font-size:17px;">We're not raising equity today. Stay in touch for Stage 2, or reach out if you fund capital-intensive manufacturing at a valuation grounded in comparable deals — not a program-standard check.</p></div>
+    </div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">13</div>
+</section>
+
+</body>
+</html>

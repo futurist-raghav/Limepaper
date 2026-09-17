@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Limepaper — Customer / D2C Deck</title>
+<style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #2C333B; background: #FAF7F2; }
+  :root { --ink:#2C333B; --paper:#FAF7F2; --marble:#E4DCC9; --marble-dark:#CFC4A8; --rust:#B5623A; --slate:#5B6470; --line:#D8D0C0; }
+  .slide { width:1280px; height:720px; page-break-after: always; position:relative; padding:64px 80px; overflow:hidden; display:flex; flex-direction:column; }
+  .slide:last-child { page-break-after: auto; }
+  .kicker { color: var(--rust); font-weight:700; letter-spacing:.12em; text-transform:uppercase; font-size:15px; margin-bottom:10px; }
+  h1 { font-size:44px; font-weight:700; line-height:1.15; letter-spacing:-0.01em; }
+  h2 { font-size:36px; font-weight:700; margin-bottom:24px; letter-spacing:-0.01em; }
+  h3 { font-size:20px; font-weight:700; margin-bottom:8px; }
+  p, li { font-size:19px; line-height:1.6; color:var(--ink); }
+  .sub { font-size:22px; color:var(--slate); margin-top:16px; max-width:800px; line-height:1.5; }
+  .slide-num { position:absolute; bottom:28px; right:80px; font-size:13px; color:var(--slate); }
+  .brand { position:absolute; bottom:28px; left:80px; font-size:13px; color:var(--slate); font-weight:600; letter-spacing:.04em; }
+  .content { flex:1; display:flex; flex-direction:column; justify-content:center; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .grid5 { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:26px 28px; }
+  .card h3 { color:var(--rust); }
+  ul { list-style:none; }
+  ul li { position:relative; padding-left:22px; margin-bottom:12px; }
+  ul li::before { content:"—"; position:absolute; left:0; color:var(--rust); font-weight:700; }
+  .pill { display:inline-block; background:var(--marble); color:var(--ink); font-size:13px; font-weight:700; padding:5px 14px; border-radius:999px; margin-right:8px; }
+  .title-slide { justify-content:center; align-items:flex-start; background:linear-gradient(135deg,#FAF7F2 60%,var(--marble) 100%); }
+  .title-slide h1 { font-size:66px; }
+  .tag { font-size:24px; color:var(--slate); margin-top:18px; max-width:700px; }
+  .imgcard { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px; text-align:center; }
+  .imgcard img { width:100%; height:130px; object-fit:contain; }
+  .imgcard .cap { font-size:14px; font-weight:600; margin-top:8px; color:var(--ink); }
+  .warn { background:#FFF6EC; border:1px solid #E9C9A0; border-radius:10px; padding:20px 24px; }
+  .warn h3 { color:var(--rust); margin-bottom:8px; }
+  .bigquote { font-size:30px; line-height:1.4; font-weight:500; color:var(--ink); max-width:900px; }
+  .bigquote .accent { color:var(--rust); font-weight:700; }
+</style>
+</head>
+<body>
+
+<!-- 1: Title -->
+<section class="slide title-slide">
+  <div class="kicker">Limepaper — Our Story</div>
+  <h1>Paper made from stone,<br>not trees</h1>
+  <p class="tag">Notebooks, cartons, gifting, and everyday paper — grown from marble waste that Rajasthan's mines throw away.</p>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">1</div>
+</section>
+
+<!-- 2: The story -->
+<section class="slide">
+  <div class="kicker">Where It Starts</div>
+  <h2>A waste yard in Kishangarh</h2>
+  <div class="content">
+    <p class="bigquote">Rajasthan's marble mines leave behind a fine white slurry — <span class="accent">a truck arrives roughly every ten minutes</span> just to dump it. It's been treated as a pollution problem for years. We turn it into paper instead.</p>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">2</div>
+</section>
+
+<!-- 3: What makes it different -->
+<section class="slide">
+  <div class="kicker">What Makes It Different</div>
+  <h2>No trees. No water. Still paper.</h2>
+  <div class="content grid3">
+    <div class="card"><h3>Tree-free</h3><p style="font-size:16px;">Made from ground marble waste, not wood pulp — no forest goes into this notebook.</p></div>
+    <div class="card"><h3>Water-free</h3><p style="font-size:16px;">Regular paper uses roughly 200 litres of water per kilogram made. Ours uses none in the sheet-making process.</p></div>
+    <div class="card"><h3>Tougher</h3><p style="font-size:16px;">Naturally tear- and water-resistant — it survives a spilled cup of chai that would ruin a normal notebook.</p></div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">3</div>
+</section>
+
+<!-- 4: Product showcase -->
+<section class="slide">
+  <div class="kicker">The Collection</div>
+  <h2>Everyday paper, reimagined</h2>
+  <div class="content">
+    <div class="grid5" style="margin-bottom:16px;">
+      <div class="imgcard"><img src="../docs/images/skus/notebook-softcover.png"><div class="cap">Softcover notebook</div></div>
+      <div class="imgcard"><img src="../docs/images/skus/notebook-diary.png"><div class="cap">Diary</div></div>
+      <div class="imgcard"><img src="../docs/images/skus/notebook-open-ruled.png"><div class="cap">Ruled notebook</div></div>
+      <div class="imgcard"><img src="../docs/images/skus/bag-carry-boutique.png"><div class="cap">Boutique bag</div></div>
+      <div class="imgcard"><img src="../docs/images/skus/tag-hang.png"><div class="cap">Gift tags</div></div>
+    </div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">4</div>
+</section>
+
+<!-- 5: Honest sustainability note -->
+<section class="slide">
+  <div class="kicker">Being Honest With You</div>
+  <h2>What we claim, and what we don't</h2>
+  <div class="content grid2">
+    <div class="card"><h3>What's true</h3><ul><li>No trees cut for this paper</li><li>No water used in making the sheet</li><li>Far less energy than standard papermaking</li></ul></div>
+    <div class="warn"><h3>What we won't claim</h3><p style="font-size:16px;">Our paper contains a small amount of HDPE (plastic) as a binder — about 18%. That means it isn't compostable and isn't "plastic-free." It breaks down under sunlight over time, but not biodegradably. We'd rather tell you this upfront than have you assume otherwise.</p></div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">5</div>
+</section>
+
+<!-- 6: Occasions -->
+<section class="slide">
+  <div class="kicker">Where It Fits Your Life</div>
+  <h2>Gifting, everyday use, and beyond</h2>
+  <div class="content grid3">
+    <div class="card"><h3>Corporate gifting</h3><p style="font-size:16px;">Branded notebooks and diaries with a genuine sustainability story — not a greenwashed one.</p></div>
+    <div class="card"><h3>Everyday carry</h3><p style="font-size:16px;">Notebooks that survive your bag, your desk, and the occasional spill.</p></div>
+    <div class="card"><h3>Small boutique retail</h3><p style="font-size:16px;">Carry bags and tags for brands who want packaging that matches their values.</p></div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">6</div>
+</section>
+
+<!-- 7: Behind the scenes -->
+<section class="slide">
+  <div class="kicker">Behind the Scenes</div>
+  <h2>Made close to where the stone comes from</h2>
+  <div class="content grid2">
+    <div class="card"><h3>Local, not imported</h3><p style="font-size:16px;">We're building our plant near Kishangarh — close enough to the marble belt that the raw material barely travels before it becomes paper.</p></div>
+    <div class="card"><h3>A family business</h3><p style="font-size:16px;">Two founders and a senior family member with hands-on carton-industry experience, building this from the ground up — not a corporate sustainability initiative, a real small manufacturer.</p></div>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">7</div>
+</section>
+
+<!-- 8: Founder note -->
+<section class="slide">
+  <div class="kicker">A Note From Us</div>
+  <h2>Why we're doing this</h2>
+  <div class="content">
+    <p class="bigquote">We grew up around Rajasthan's marble industry and watched its waste pile up as a problem nobody wanted to solve. Paper felt like the most useful thing we could turn it into — <span class="accent">something people already use every day</span>, made a little differently.</p>
+  </div>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">8</div>
+</section>
+
+<!-- 9: Contact -->
+<section class="slide title-slide">
+  <div class="kicker">Stay In Touch</div>
+  <h1 style="font-size:52px;">Follow the journey</h1>
+  <p class="tag">We're building this in the open — updates on the plant, the products, and the process, as they happen.</p>
+  <div class="brand">LIMEPAPER</div>
+  <div class="slide-num">9</div>
+</section>
+
+</body>
+</html>
